@@ -1,0 +1,222 @@
+/** 
+ * This file contains the default layout of the website and should *not* be
+ * modified. 
+ * Instead, it is advised to create a custom CSS file and to @import this
+ * default stylesheet.
+ */
+
+/********** Variables ********************************************************/
+
+:root {
+    /* The colour of the background of the pages */
+    --col-bg: #1f1f1f;
+    /* The default colour of the text */
+    --col-fg: white;
+    /* The colour of some "less important" elements */
+    --col-light: #888;
+    /* The colour of hovered hyperlinks */
+    --col-link: #4af;
+    /* The red, green, blue values of the colour of the main elements of a
+    page: the title, the subtitle, the menu, the headers */
+    --rgb-main: 255,100,150;
+    /* The main font */
+    --font: "DejaVu Serif", serif;
+}
+
+
+/********** Global styling ***************************************************/
+
+html {
+    height: 100%;
+    background-color: var(--col-bg);
+    color: var(--col-fg);
+    font-size: 17px;
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#left, #right {
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+#middle {
+    flex-basis: 800px;
+    flex-grow: 0;
+}
+
+
+/********** Text elements ****************************************************/
+
+* {
+    line-height: 1.7em;
+}
+
+p, li {
+    margin: .6em 0;
+    hyphens: auto;
+}
+
+ul, ol {
+    margin: 0;
+}
+
+h1, details.h1summary summary {
+    margin-bottom: 1rem;
+    font-size: calc(1.4rem + .4vw);
+    font-weight: bold;
+    color: rgba(var(--rgb-main), 1);
+}
+h2, details.h2summary summary {
+    margin-bottom: .6rem;
+    font-size: calc(1.2rem + .2vw);
+    font-weight: bold;
+    color: rgba(var(--rgb-main), .5);
+}
+h3, details.h3summary summary {
+    margin-bottom: .6rem;
+    font-size: calc(1.1rem + .1vw);
+    font-weight: bold;
+    color: rgba(var(--rgb-main), .3);
+}
+
+h1, details.h1summary {
+    margin-top: 1.6rem;
+}
+h2, details.h2summary {
+    margin-top: 1.3rem;
+}
+h3, details.h3summary {
+    margin-top: 1.2rem;
+}
+
+a, .link {
+    text-decoration: initial;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: inherit;
+}
+a:hover, .link:hover {
+    color: var(--col-link);
+}
+.link {
+    cursor: pointer;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+
+/********** Headers **********************************************************/
+
+nav {
+    text-transform: uppercase;
+    font-size: .85rem;
+}
+
+    nav a {
+        border-style: none;
+    }
+
+nav#nav-lang {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    color: var(--col-light);
+}
+
+    nav#nav-lang span {
+        display: block;
+    }
+    nav#nav-lang span:not(:last-child) {
+        margin-right: .5em;
+    }
+    nav#nav-lang span:not(:last-child):after {
+        padding-left: .5em;
+        content: "|";
+        font-weight: normal;
+    }
+    nav#nav-lang span.current {
+        font-weight: bold;
+    }
+
+header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+    
+    header div.title {
+        font-size: calc(1.5rem + .5vw);
+        color: rgba(var(--rgb-main), 1);
+        font-weight: bold;
+    }
+
+    header div.subtitle {
+        margin-top: 5px;
+        color: rgba(var(--rgb-main), .5);
+    }
+
+nav#nav-main {
+    margin-bottom: 30px;
+    border-style: solid none;
+    border-width: 2px;
+    border-color: rgba(var(--rgb-main), .04);
+    background-color: rgba(var(--rgb-main), .02);
+    padding: 6px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    nav#nav-main span {
+        display: inline-block;
+        padding: 0 .5em;
+    }
+
+
+/********** Lists of publications and talks **********************************/
+
+
+.papers li {
+    margin-bottom: .8em;
+}
+
+.p-title {
+    font-weight: bold;
+}
+
+.p-details, .p-links {
+    font-size: .85em;
+    margin: 0.255em 0;
+}
+
+.p-links > * {
+    margin-right: .5em;
+}
+
+.p-abstract {
+    font-size: .85em;
+    color: var(--col-light);
+}
+
+.t-title {
+    font-weight: bold;
+}
+
+.t-links a {
+    margin-right: .3em
+}
+.t-links a:before {
+    content: "[";
+}
+.t-links a:after {
+    content: "]";
+}
