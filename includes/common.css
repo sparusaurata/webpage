@@ -1,0 +1,9 @@
+/********** Unifying KaTeX with the layout ***********************************/
+
+.katex {
+    font-size: 1em;
+}
+
+.katex .mathnormal {
+    font-family: var(--font), KaTeX_Math, serif;
+}
