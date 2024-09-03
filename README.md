@@ -1,0 +1,1 @@
+This is the template of my personal webpage. There's some automated stuff, e.g. for printing lists of publications, and maybe there will be more. Feel free to use it (and to report any bug or feature request).
