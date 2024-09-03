@@ -20,7 +20,7 @@ global $settings;
 /**
  * The (absolute or relative) path to the root of the website.
  */
-$settings['root'] = "/webpage-template/";
+$settings['root'] = "/";
 
 
 /**

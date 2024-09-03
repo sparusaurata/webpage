@@ -12,7 +12,7 @@
 
 
 /* Set to true to show more error messages. */
-$debugging = true;
+$debugging = false;
 if ( $debugging ) {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
