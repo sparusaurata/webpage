@@ -18,9 +18,20 @@ global $settings;
 
 
 /**
- * The (absolute or relative) path to the root of the website.
+ * The path to the virtual web root on the (physical) server.
+ * This is usually given by $_SERVER['DOCUMENT_ROOT'], but some servers
+ * don't set the actual value there. (In this case you'll get a blank page.
+ * Activate debugging in template.php, and the inclusion errors will
+ * indicate the right path.)
  */
-$settings['root'] = "/";
+$settings['server root'] = $_SERVER['DOCUMENT_ROOT'];
+
+
+/**
+ * The (absolute or relative) path to the root of the website,
+ * starting from the (virtual) root of the web server.
+ */
+$settings['site root'] = "/";
 
 
 /**

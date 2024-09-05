@@ -54,7 +54,7 @@ function start_content (
         // Set a boolean telling includes that they're included.
         define("STARTED", true);
 
-        // Load the settings a first time, just to get $settings['root'].
+        // Load the settings a first time, just to get $settings['site root'].
         require($settingsfile);
         // Define the root of the website.
         // The method depend whether php is called from the command-line
@@ -63,7 +63,7 @@ function start_content (
         if ( php_sapi_name() === 'cli' ) {
             define("ROOT", getenv('PWD') . "/");
         } else {
-            define("ROOT", $_SERVER['DOCUMENT_ROOT'] . $settings['root']);
+            define("ROOT", $settings['server root'] . $settings['site root']);
         }
         // Load the default settings, then the custom settings.
         include_once(ROOT . "includes/default-settings.php");
@@ -250,7 +250,7 @@ function load_favicon() {
         echo t(2);
         echo html_tag("link", [ 
             "rel" => "icon", 
-            "href" => $settings['root'] . $settings['favicon'] 
+            "href" => $settings['site root'] . $settings['favicon'] 
         ]);
         echo t(2);
     }
@@ -267,17 +267,17 @@ function load_layout() {
 
     if ( $settings['katex'] ) {
         echo html_tag("link", $options + [
-            "href" => $settings['root'] . "includes/katex/katex.min.css",
+            "href" => $settings['site root'] . "includes/katex/katex.min.css",
             "integrity" => "sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+",
             "crossorigin" => "anonymous",
         ]) . t(2);
     }
 
     echo html_tag("link", $options + [ 
-        "href" => $settings['root'] . $settings['layout']
+        "href" => $settings['site root'] . $settings['layout']
     ]) . t(2);
     echo html_tag("link", $options + [ 
-        "href" => $settings['root'] . "includes/common.css" 
+        "href" => $settings['site root'] . "includes/common.css" 
     ]) . t(2);
     
     echo html_tag("style", [],
@@ -292,20 +292,20 @@ function load_javascript() {
     global $settings, $pagedata;
 
     echo html_tag("script", [ 
-        "src" => $settings['root'] . "includes/common.js"
+        "src" => $settings['site root'] . "includes/common.js"
     ], "") . t(2);
 
     if ( $settings['katex'] ) {
         echo html_tag("script", array(
             "defer" => null,
             "crossorigin" => "anonymous",
-            "src" => $settings['root'] . "includes/katex/katex.min.js",
+            "src" => $settings['site root'] . "includes/katex/katex.min.js",
             "integrity" => "sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg",
         ), "") . t(2);
         echo html_tag("script", array(
             "defer" => null,
             "crossorigin" => "anonymous",
-            "src" => $settings['root'] . "includes/katex/auto-render.min.js",
+            "src" => $settings['site root'] . "includes/katex/auto-render.min.js",
             "integrity" => "sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk",
             "onload" => "renderMathInElement(document.body);",
         ), "") . t(0);
