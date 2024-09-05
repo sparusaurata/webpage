@@ -14,6 +14,8 @@
 /* Set to true to show more error messages. */
 $debugging = false;
 if ( $debugging ) {
+    /* Uncomment the following line if you're trying to find the server root. */
+    //echo "The current directory is " . getenv("PWD") . ".";
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -61,13 +63,14 @@ function start_content (
         // (this is the case when a static site is generated) or from a web
         // server.
         if ( php_sapi_name() === 'cli' ) {
-            define("ROOT", getenv('PWD') . "/");
-        } else {
-            define("ROOT", $settings['server root'] . $settings['site root']);
+            $settings['server root'] = getenv('PWD') . "/";
         }
-        // Load the default settings, then the custom settings.
-        include_once(ROOT . "includes/default-settings.php");
+        // Load the default settings, then the custom settings again.
+        include_once($settings['server root'] . "includes/default-settings.php");
         include($settingsfile);
+        if ( php_sapi_name() === 'cli' ) {
+            $settings['server root'] = getenv('PWD') . "/";
+        }
         define("MLING",
             $settings['multilingual'] == 'static'
             or $settings['multilingual'] == 'dynamic'
@@ -76,7 +79,7 @@ function start_content (
         // Load the page data.
         global $pagedata; $pagedata = array();
         $pagedata['language'] = get_language($language);
-        if ( $menufile ) { include(ROOT . $menufile); }
+        if ( $menufile ) { include($settings['server root'] . $menufile); }
         $pagedata['menu'] = $menu;
         $pagedata['title'] = $title;
         if ( MLING ) {
@@ -89,7 +92,7 @@ function start_content (
         }
 
         // Print the header.
-        require(ROOT . "includes/header.php");
+        require($settings['server root'] . "includes/header.php");
         echo "\n<!---------- HERE THE CONTENT STARTS ------------------------------------------>\n";
     }
 
@@ -107,7 +110,7 @@ function end_content () {
     // In this case the content should not be closed yet.
     if ( !defined("INCLUDED") ) {
         echo "\n<!---------- HERE THE CONTENT ENDS ---------------------------------------->\n";
-        require(ROOT . "includes/footer.php");
+        require($settings['server root'] . "includes/footer.php");
     }
 }
 
