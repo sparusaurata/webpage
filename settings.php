@@ -18,20 +18,21 @@ global $settings;
 
 
 /**
- * The path to the virtual web root on the (physical) server.
- * This is usually given by $_SERVER['DOCUMENT_ROOT'], but some servers
- * don't set the actual value there. (In this case you'll get a blank page.
- * Activate debugging in template.php, and the inclusion errors will
- * indicate the right path.)
+ * The path to the root of the website, starting from the (virtual) root of the 
+ * web server. If the URL to your website is https://www.site.ext/path/to/site,
+ * this should be set to "/path/to/site/". 
  */
-$settings['server root'] = $_SERVER['DOCUMENT_ROOT'];
+$settings['site root'] = "/webpage-template/";
 
 
 /**
- * The (absolute or relative) path to the root of the website,
- * starting from the (virtual) root of the web server.
+ * The path to the directory on the (physical) server corresponding to the
+ * root of the website, i.e. the directory where the documents are stored.
+ * 
+ * This is the first thing you should check if the site is just a blank page.
+ * Activate debugging in includes/template.php and read the error messages.
  */
-$settings['site root'] = "/webpage-template/";
+$settings['server root'] = $_SERVER['DOCUMENT_ROOT'] . $settings['site root'];
 
 
 /**
