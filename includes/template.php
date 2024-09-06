@@ -661,7 +661,7 @@ function get_paper( $paper, $id ) {
         $details .= " DOI:&nbsp;" . html_tag("a", [
             "target" => "_blank",
             "href" => "https://dx.doi.org/" . $paper['doi']
-        ], $paper['doi']);
+        ], $paper['doi']) . ".";
     }
 
     $links = "";
