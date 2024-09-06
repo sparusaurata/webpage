@@ -1,0 +1,12 @@
+@import url("default-layout.css");
+
+:root {
+    --rgb-main: 255,255,255;
+    --col-link: #ff135a;
+}
+
+img.me {
+    float: right;
+    width: calc(100px + 5%);
+    padding: 0 0 10px 5%;
+}

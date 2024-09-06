@@ -47,41 +47,6 @@ if( !defined("STARTED") ) { die("<h1>Access denied</h1>"); }
 
 $data = [
 
-    array(
-        // Mandatory parameters
-        'title'         => "An example paper",
-        'authors'       => ["Author One", "Author Two", "Ignored"],
-        'type'          => "journal",
-        'status'        => null,
-        'date'          => "2024-09-02",
-        // Optional parameters (can be removed)
-        'info'          =>
-            "<i>Great journal</i>, vol. 42.",
-        'abstract'      =>
-            "<p>
-            This is an abstract. It can contain several pragraphs.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus ante eget malesuada accumsan. Phasellus porta ornare velit, non faucibus risus faucibus sodales. Suspendisse laoreet convallis accumsan. Phasellus vestibulum nisi quis ullamcorper sodales. Fusce risus nibh, imperdiet et mollis vel, pellentesque vitae magna.
-            </p>",
-        'pdf'           => "/link/to/PDF",
-        'arxiv'         => "see.there's.a.prefix",
-        'hal'           => null,
-        'code'          => null,
-        'video'         => null,
-        'url'           => null,
-        'slides'        => null,
-    ),
-
-    array(
-        // Mandatory parameters
-        'title'         => "Another paper",
-        'authors'       => ["Ignored"],
-        'type'          => "proceedings",
-        'status'        => "submitted",
-        'date'          => "2024-09-01",
-    ),
-    
     /* 
 
     array(
@@ -108,6 +73,60 @@ $data = [
     ),
 
     */
+
+    array(
+        'title'         => "Coller en mathématiques. Rite disciplinaire et 
+            formation des élites",
+        'authors'       => ["R.C."],
+        'type'          => "thesis",
+        'status'        => null,
+        'date'          => "2019-09-05",
+        'info'        => array(
+            'fr' => 
+                "Mémoire de recherche dans le cadre d'un M1 de sciences sociales.
+                Sous la direction d'E.&nbsp;Picard.",
+            'en' =>
+                "First year Master thesis in Social sciences. Under the 
+                supervision of E.&nbsp;Picard.",
+        ),
+    ),
+    array(
+        'title'         => "Pêcher des poissons pour leur apprendre à
+            nager&nbsp;? II.&nbsp;En «&nbsp;colles&nbsp;», les mathématiques au 
+            service d'une formation élitiste",
+        'authors'       => ["R.C."],
+        'type'          => "bookchapter",
+        'status'        => NULL,
+        'date'          => "2023-10-30",
+        'info'          =>
+            "In <span style=\"font-variant-ligatures: none;\"
+            >P.-M.</span>&nbsp;Menger, P.&nbsp;Verschueren (dir.),
+            <i>Le Monde des mathématiques</i>,
+            éd. du Seuil (actes du colloque
+            «&nbsp;Mathématiques, communautés et institutions&nbsp;»,
+            Collège de France, 2020).",
+        'abstract'      =>
+            "<p>
+            L'importance persistante des mathématiques dans l'accès à une 
+            grande part des filières d'élite en France pousse à s'interroger 
+            sur le rôle concret joué par cette discipline et ses cadres 
+            d'enseignement dans la (re)production d'une «&nbsp;jeunesse 
+            dominante&nbsp;». Étudiant dans trois lycées prestigieux les 
+            «&nbsp;colles&nbsp;» de mathématiques, interrogations orales au 
+            cœur du dispositif pédagogique des classes préparatoires, nous 
+            montrons que l'apprentissage et l'évaluation des savoirs y sont le 
+            support d'une prise en charge institutionnelle des élèves (au moins 
+            autant que l'inverse) visant à leur transmettre des dispositions 
+            qui excèdent largement le seul cadre des mathématiques. La 
+            structure des jugements mathématiques des interrogateurs fait 
+            apparaître une valeur <i>d'autonomie</i>, nourrie de la dualité 
+            rigueur/intuition classique en mathématiques, qui renouvelle 
+            l'idéologie du don bourdieusienne et interfère avec le passé social 
+            des élèves — au risque d'agir en différenciant leurs trajectoires.
+            </p>",
+        'pdf'           => "./fichiers/papiers/colles.pdf",
+        'url'           => "https://www.seuil.com/ouvrage/le-monde-des-mathematiques-collectif/9782021530704",
+    ),
 ]
 
 ?>
