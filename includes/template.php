@@ -560,9 +560,8 @@ function get_list(
             );
             if ( $content ) {
                 if ( $foldable ) {
-                    $attr = array("class" => 
-                        implode(" ", $class + [$groupheadtag . "summary"])
-                    );
+                    $class[] = $groupheadtag . "summary";
+                    $attr = array("class" => implode(" ", $class));
                     if ( !$folded or !$firstfolded ) {
                         $attr["open"] = null;
                     }
@@ -661,7 +660,7 @@ function get_paper( $paper, $id ) {
         $details .= " DOI:&nbsp;" . html_tag("a", [
             "target" => "_blank",
             "href" => "https://dx.doi.org/" . $paper['doi']
-        ], $paper['doi']);
+        ], $paper['doi']) . ".";
     }
 
     $links = "";
@@ -698,7 +697,7 @@ function get_paper( $paper, $id ) {
             "class" => "p-abstract",
             "id" => $id . "-abstract",
             "style" => "display: none;"
-        ], $paper['abstract']);
+        ], translate_if_needed($paper['abstract']));
     } else {
         $abstract = "";
     }
