@@ -50,6 +50,7 @@ body {
 #middle {
     flex-basis: 800px;
     flex-grow: 0;
+    padding-bottom: 30px;
 }
 
 
