@@ -560,9 +560,8 @@ function get_list(
             );
             if ( $content ) {
                 if ( $foldable ) {
-                    $attr = array("class" => 
-                        implode(" ", $class + [$groupheadtag . "summary"])
-                    );
+                    $class[] = $groupheadtag . "summary";
+                    $attr = array("class" => implode(" ", $class));
                     if ( !$folded or !$firstfolded ) {
                         $attr["open"] = null;
                     }
