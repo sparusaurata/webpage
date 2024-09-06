@@ -7,8 +7,8 @@ require_once("./includes/template.php");
 // All possible arguments of start_content() are listed in template.php.
 start_content(
     title: array(
-        'fr' => "Recherche | Rémy Cerda",
-        'en' => "Research | Rémy Cerda",
+        'fr' => "Rémy Cerda | Recherche",
+        'en' => "Rémy Cerda | Research",
     ),
     menufile: "menu.php"
 );
@@ -27,7 +27,7 @@ start_content(
 </p>
 
 <p lang="fr">
-    En outre, j'ai une formation (modeste) et un intérêt (sous-exploité) dans les domaines de la sociologie et du droit, <i>cf.</i> <a href="#shs">la section correspondance</a> pour quelques détails.
+    En outre, j'ai une formation (modeste) et un intérêt (sous-exploité) dans les domaines de la sociologie et du droit, <i>cf.</i> <a href="#shs">la section correspondante</a> pour quelques détails.
 </p>
 <p lang="en">
     Besides, I have some (modest) background and (under-exploited) interests in the fields of sociology and law, see <a href="#shs">the corresponding section</a> for some details.
@@ -79,7 +79,7 @@ start_content(
 </h2>
 
 <p lang="fr">
-    Dans une autre vie, j'ai étudié la sociologie et j'ai toujours beaucoup d'intérêt pour ce domaine, même si je manque de temps. Je me suis surtout concentré sur la sociologie de l'enseignement supérieur&nbsp;:
+    Dans une autre vie, j'ai étudié la sociologie et j'ai toujours beaucoup d'intérêt pour ce domaine, même si je manque de temps. Je me suis surtout spécialisé dans la sociologie de l'enseignement supérieur&nbsp;:
 </p>
 <p lang="en">
     In another life, I studied sociology and I still have many interests in this field, although I lack time. My main focus is on sociology of higher education:

@@ -39,7 +39,7 @@ start_content(
 
 <p lang="fr">
     Mes intérêts de recherche sont principalement situés entre la logique mathématique et l'informatique théorique, et sont portés par la <a href="https://fr.wikipedia.org/wiki/Correspondance_de_Curry-Howard" target="_blank">correspondance de Curry-Howard</a>.
-    Ils incluent notamment le λ-calcul, la logique linéaire, la réécriture infinitaire, la théorie de la démonstration non-bien fondée, l'approximation de programmes, la sémantique des langages de programmation.
+    Ils incluent notamment le λ-calcul, la logique linéaire, la réécriture infinitaire, la théorie de la démonstration dans un cadre non-bien fondé, l'approximation de programmes, la sémantique des langages de programmation.
     Plus de détails sur <a href="recherche.php">la page dédiée</a>.
 </p>
 <p lang="en">
