@@ -119,6 +119,12 @@ details summary {
     cursor: pointer;
 }
 
+abbr {
+    text-decoration: initial;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+}
+
 
 /********** Headers **********************************************************/
 
