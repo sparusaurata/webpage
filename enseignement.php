@@ -5,7 +5,13 @@ require_once("./includes/template.php");
 
 // Load the settings and print the header.
 // All possible arguments of start_content() are listed in template.php.
-start_content(menufile: "menu.php");
+start_content(
+    title: array(
+        'fr' => "Enseignement | Rémy Cerda",
+        'en' => "Teaching | Rémy Cerda",
+    ),
+    menufile: "menu.php"
+);
 
 ?>
 

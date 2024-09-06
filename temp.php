@@ -5,7 +5,10 @@ require_once("./includes/template.php");
 
 // Load the settings and print the header.
 // All possible arguments of start_content() are listed in template.php.
-start_content(menufile: "menu.php");
+start_content(
+    title: "Rémy Cerda",
+    menufile: "menu.php"
+);
 
 /*
 <a href="" target="_blank"></a>
@@ -15,6 +18,9 @@ start_content(menufile: "menu.php");
 ?>
 
 <p lang="fr">
+<img class="me" src="fichiers/rc.jpg">
+    Je suis (sur le point de devenir) post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, à Paris.
+    Je travaillerai au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> conduit par <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
 </p>
 <p lang="en">
     <img class="me" src="fichiers/rc.jpg">
@@ -23,6 +29,8 @@ start_content(menufile: "menu.php");
 </p>
 
 <p lang="fr">
+    Précédemment, j'étais doctorant en mathématiques à l'<a href="https://www.univ-amu.fr/" target="_blank">université d'Aix-Marseille</a>, au sein de l'équipe <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logique de la programmation</a> de l'<a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>. 
+    Mes directeurs de thèse étaient <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a> et <a href="https://www.i2m.univ-amu.fr/perso/laurent.regnier/" target="_blank">Laurent Regnier</a>.
 </p>
 <p lang="en">
     Previously, I was a PhD student in Mathematics at <a href="https://www.univ-amu.fr/" target="_blank">Aix-Marseille University</a>, in the <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logics of Programming</a> team of <a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>. 
@@ -30,11 +38,14 @@ start_content(menufile: "menu.php");
 </p>
 
 <p lang="fr">
+    Mes intérêts de recherche sont principalement situés entre la logique mathématique et l'informatique théorique, et sont portés par la <a href="https://fr.wikipedia.org/wiki/Correspondance_de_Curry-Howard" target="_blank">correspondance de Curry-Howard</a>.
+    Ils incluent notamment le λ-calcul, la logique linéaire, la réécriture infinitaire, la théorie de la démonstration non-bien fondée, l'approximation de programmes, la sémantique des langages de programmation.
+    Plus de détails sur <a href="recherche.php">la page dédiée</a>.
 </p>
 <p lang="en">
-    My research interests mainly lie between mathematical logic and theoretical computer science, and are driven by the <a href="" target="_blank">Curry-Howard correspondence</a>.
+    My research interests mainly lie between mathematical logic and theoretical computer science, and are driven by the <a href="https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence" target="_blank">Curry-Howard correspondence</a>.
     They include λ-calculus, linear logic, infinitary rewriting, non-wellfounded proof theory, program approximation, semantics of programming languages. 
-    See more details on <a href="recherche.php">the dedicated page</a>.
+    See more details on <a href="recherche.php?lang=en">the dedicated page</a>.
 </p>
 
 <!------------------------------------->
@@ -47,27 +58,42 @@ start_content(menufile: "menu.php");
 
 <dl>
     <dt>Oct. 2024</dt>
-    <dd lang="fr"></dd>
+    <dd lang="fr">
+        Le 1er&nbsp;octobre, je commence un post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, avec <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a>.
+    </dd>
     <dd lang="en">
         On Oct.&nbsp;1st, I will start a post-doc at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>'s project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a>.
     </dd>
 
-    <dt lang="fr"></dt>
+    <dt lang="fr">Juin 2024</dt>
     <dt lang="en">June 2024</dt>
-    <dd lang="fr"></dd>
+    <dd lang="fr">
+        Ma soutenance de thèse a lieu le 10&nbsp;juin.
+        Voir (une version préliminaire de) <a href="fichiers/these/manuscrit.pdf" target="_blank">mon manuscrit</a>, intitulé <i>Taylor expansion and Infinitary λ-calculi</i>, et <a href="fichiers/exposes/soutenance.pdf" target="_blank">les diapos</a> de la soutenance.
+    </dd>
     <dd lang="en">
         My PhD defence takes place on June&nbsp;10th.
         See (a preliminary version of) <a href="fichiers/these/manuscrit.pdf" target="_blank">the manuscript</a>, entitled <i>Taylor expansion and Infinitary λ-calculi</i>, and <a href="fichiers/exposes/soutenance.pdf" target="_blank">the slides</a> of the defence.
     </dd>
 
-    <dt lang="fr"></dt>
+    <dt lang="fr">Mai 2024</dt>
     <dt lang="en">May 2024</dt>
-    <dd lang="fr"></dd>
+    <dd lang="fr">
+        J'ai co-organisé <a href="https://conferences.cirm-math.fr/2980.html" target="_blank">une conférence</a> pour les 20&nbsp;ans de la logique linéaire diférentielle et du λ-calcul différentiel. 
+        <a href="https://www.cirm-math.fr/Schedule/screen_display.php?id_renc=2980" target="_blank">Les vidéos des exposés</a> sont en ligne&nbsp;!
+    </dd>
     <dd lang="en">
         We've been organising <a href="https://conferences.cirm-math.fr/2980.html" target="_blank">a conference</a> celebrating 20 years of differential λ-calculus and differential linear logic. 
         <a href="https://www.cirm-math.fr/Schedule/screen_display.php?id_renc=2980" target="_blank">The videos of the talks</a> are now online!
     </dd>
 </dl>
+
+<p lang="fr">
+    Voir aussi une <a href="recherche.php?lang=en#exposes">liste d'exposés récents</a> avec leurs diapos.
+</p>
+<p lang="en">
+    See also a <a href="recherche.php#exposes">list of recent talks</a> with their slides.
+</p>
 </details>
 
 <!------------------------------------->
@@ -81,7 +107,9 @@ start_content(menufile: "menu.php");
 <dl>
     <dt lang="fr">Bureau</dt>
     <dt lang="en">Office</dt>
-    <dd lang="fr"></dd>
+    <dd lang="fr">
+        Actuellement quelque part dans <a href="https://youtu.be/3aREKqn8g9k?si=Byrw-Vs9ZdqzxcJg&t=224" target="_blank">un TGV</a> entre Marseille et Paris.
+    </dd>
     <dd lang="en">
         Currently somewhere in <a href="https://youtu.be/3aREKqn8g9k?si=Byrw-Vs9ZdqzxcJg&t=224" target="_blank">a TGV</a> between Marseille and Paris.
     </dd>
@@ -90,7 +118,9 @@ start_content(menufile: "menu.php");
     <dd>
         rcerda <i>at</i> math <i>dot</i> cnrs <i>dot</i> fr
     </dd>
-    <dd lang="fr"></dd>
+    <dd lang="fr">
+        <a href="fichiers/rc.asc" target="_blank">Clé publique PGP</a>
+    </dd>
     <dd lang="en">
         <a href="fichiers/rc.asc" target="_blank">PGP public key</a>
     </dd>
