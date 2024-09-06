@@ -698,7 +698,7 @@ function get_paper( $paper, $id ) {
             "class" => "p-abstract",
             "id" => $id . "-abstract",
             "style" => "display: none;"
-        ], $paper['abstract']);
+        ], translate_if_needed($paper['abstract']));
     } else {
         $abstract = "";
     }
