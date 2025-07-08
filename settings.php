@@ -22,7 +22,7 @@ global $settings;
  * web server. If the URL to your website is https://www.site.ext/path/to/site,
  * this should be set to "/path/to/site/". 
  */
-$settings['site root'] = "/webpage-template/";
+$settings['site root'] = "/perso/remy.cerda/";
 
 
 /**
@@ -32,7 +32,7 @@ $settings['site root'] = "/webpage-template/";
  * This is the first thing you should check if the site is just a blank page.
  * Activate debugging in includes/template.php and read the error messages.
  */
-$settings['server root'] = $_SERVER['DOCUMENT_ROOT'] . $settings['site root'];
+$settings['server root'] = "/Data/home/remy.cerda/public_html/";
 
 
 /**
@@ -63,11 +63,8 @@ $settings['favicon'] = null;
  * They can be a single string, or an array of strings whose keys are
  * language identifiers.
  */
-$settings['title'] = "Title of the website";
-$settings['subtitle'] = array(
-    "en" => "This is the English version",
-    "fr" => "Ceci est la version française",
-);
+$settings['title'] = "Rémy Cerda";
+$settings['subtitle'] = null;
 
 
 ////////// LAYOUT /////////////////////////////////////////////////////////////
@@ -80,7 +77,7 @@ $settings['subtitle'] = array(
  * The value of $settings['root'] will be added as a prefix of the given
  * path.
  */
-$settings['layout']  = "includes/default-layout.css";
+$settings['layout']  = "includes/layout.css";
 
 
 ////////// LANGUAGES //////////////////////////////////////////////////////////
@@ -107,7 +104,7 @@ $settings['multilingual'] = "dynamic";
  * If $settings['multilingual'] is not set to 'static' or 'dynamic', only the
  * first language will be considered.
  */
-$settings['languages'] = ['en', 'fr'];
+$settings['languages'] = ['fr', 'en'];
 
 
 ////////// ADDITIONAL COMPONENTS //////////////////////////////////////////////
@@ -250,7 +247,7 @@ $settings['paper types'] = array(
  * This intended for the (variants of the) name of the website's author, so
  * that only the name of their co-authors will appear.
  */
-$settings['ignored authors'] = ["Ignored"];
+$settings['ignored authors'] = ["R.C."];
 
 
 /**

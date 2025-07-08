@@ -34,29 +34,26 @@ $menu = [
 
     array(
         'text'      => array(
-            "en" => "An inner link", 
-            "fr" => "Un lien interne"
+            "en" => "Home", 
+            "fr" => "Accueil"
         ),
-        'url'       => "./index.php",
+        'url'       => $settings['site root'],
     ),
 
     array(
         'text'      => array(
-            "en" => "An anchor link", 
-            "fr" => "Une ancre"
+            "en" => "Research", 
+            "fr" => "Recherche"
         ),
-        'url'       => "#anchor",
-        'nolang'    => true,
+        'url'       => $settings['site root'] . "recherche.php",
     ),
 
     array(
         'text'      => array(
-            "en" => "An outer link", 
-            "fr" => "Un lien externe"
+            "en" => "Teaching", 
+            "fr" => "Enseignement"
         ),
-        'url'       => "https://another.website",
-        'newtab'    => true,
-        'nolang'    => true,
+        'url'       => $settings['site root'] . "enseignement.php",
     ),
 
     /*
