@@ -58,13 +58,14 @@ start_content(
 </summary>
 
 <dl>
-    <dt lang="fr">Mai 2025</dt>
-    <dt lang="en">May 2025</dt>
+    <dt lang="fr">Juil. 2025</dt>
+    <dt lang="en">July 2025</dt>
     <dd lang="fr">
-        Notre <a href="./fichiers/papiers/ohana.pdf" target="_blank">papier</a> sur les «&nbsp;Ohana trees&nbsp;» (avec Giulio Manzonetto et Alexis Saurin) a été accepté à <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>.
+        Notre <a href="./fichiers/papiers/ohana.pdf" target="_blank">papier</a> sur les «&nbsp;Ohana trees&nbsp;» (avec Giulio Manzonetto et Alexis Saurin) a paru dans les actes de à <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>.
+        On se voit à Birmingham&nbsp;? Au passage, je parlerai aussi à <a href="https://hor2025.github.io/" target="_blank">HOR</a> et <a href="TLLA" target="_blank">TLLA</a>.
     </dd>
     <dd lang="en">
-        Our <a href="./fichiers/papiers/ohana.pdf" target="_blank">paper</a> on «&nbsp;Ohana trees&nbsp;» (with Giulio Manzonetto and Alexis Saurin) has been accepted at <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>.
+        Our <a href="./fichiers/papiers/ohana.pdf" target="_blank">paper</a> on “Ohana trees” (with Giulio Manzonetto and Alexis Saurin) has been published in the proceedings of <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>. See you in Birmingham! By the way, I'll also give talks at <a href="https://hor2025.github.io/" target="_blank">HOR</a> and <a href="TLLA" target="_blank">TLLA</a>.
     </dd>
 
     <dt lang="fr">Fév. 2025</dt>

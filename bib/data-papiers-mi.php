@@ -76,7 +76,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "U3",
+        'bibid'         => "U2",
         'title'         => 
             "The lazy evaluation of the λ-calculus enjoys linear approximation, and that’s all",
         'authors'       => ["R.C."],
@@ -105,7 +105,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "U2",
+        'bibid'         => "U1",
         'title'         => 
             "Compression for Coinductive Infinitary Rewriting (A Preliminary Account)",
         'authors'       => ["R.C.", "Alexis Saurin"],
@@ -133,19 +133,17 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "U1",
+        'bibid'         => "P3",
         'title'         => 
             "Ohana trees and Taylor expansion for the λI-calculus.
             No variable gets left behind or forgotten!",
         'authors'       => ["R.C.", "G.&nbsp;Manzonetto", "A.&nbsp;Saurin"],
-        'type'          => "unpublished",
-        'status'        => "accepted",
-        'date'          => "2025-05-09",
+        'type'          => "proceedings",
+        'status'        => "",
+        'date'          => "2025-07-07",
         // Optional parameters (can be removed)
-        'info'          => array(
-            'fr' => "Accepté pour présentation à <a href=\"https://fscd2025.github.io/\" target=\"_blank\">FSCD&nbsp;2025</a>.",
-            'en' => "Accepted for presentation at <a href=\"https://fscd2025.github.io/\" target=\"_blank\">FSCD&nbsp;2025</a>.",
-        ),
+        'info'          => 
+            "<i>10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)</i>, LIPIcs vol.&nbsp;337.",
         'abstract'      =>
             "<p>
             Although the λI-calculus is a natural fragment of the λ-calculus, obtained by forbidding the erasure, its equational theories did not receive much attention. The reason is that all proper denotational models studied in the literature equate all non-normalizable λI-terms, whence the associated theory is not very informative. The goal of this paper is to introduce a previously unknown theory of the λI-calculus, induced by a notion of evaluation trees that we call ‘Ohana trees’. The Ohana tree of a λI-term is an annotated version of its Böhm tree, remembering all free variables that are hidden within its meaningless subtrees, or pushed into infinity along its infinite branches.
@@ -159,6 +157,7 @@ $data = [
         'video'         => null,
         'url'           => null,
         'slides'        => null,
+        'doi'           => "10.4230/LIPIcs.FSCD.2025.12",
     ),
 
     array(

@@ -59,6 +59,70 @@ $data = [
     array(
         // Mandatory parameters
         'title'         => 
+            "Confluence of 001- and 101-infinitary λ-calculi by linear approximation",
+        'type'          => "conference",
+        'date'          => "2025-09-02",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://iwc2025.github.io/\" target=\"_blank\">IWC&nbsp;2025</a>",
+        'location'      => "Leipzig", 
+        'info'          => "",
+        'pdf'           => "./fichiers/exposes/simulation-iwc.pdf",
+        'video'         => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => 
+            "The lazy evaluation of the λ-calculus enjoys linear approximation, and that's all",
+        'type'          => "conference",
+        'date'          => "2025-07-20",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/lazy-taylor-tlla.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/lazy-taylor-tlla-slides.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         =>
+            "Ohana trees and Taylor expansion for the λI-calculus. No variable gets left behind or forgotten!",
+        'type'          => "conference",
+        'date'          => "2025-07-18",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://fscd2025.github.io/\" target=\"_blank\">FSCD&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/ohana.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/ohana-fscd.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => "Compression for Coinductive Infinitary Rewriting
+            (A Preliminary Account)",
+        'type'          => "conference",
+        'date'          => "2025-07-14",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/compression-hor.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/compression-hor-slides.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => 
             "Linear approximation of functional programs, revisited",
         'type'          => "seminar",
         'date'          => "2025-04-02",

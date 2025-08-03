@@ -40,17 +40,17 @@ start_content(
 
 <ul>
     <li lang="fr">
-        Dans ma thèse avec <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a>, j'ai reformulé l'approximation linéaire des programmes fonctionnels (<i>alias</i> développement de Taylor pour le λ-calcul) à l'aide d'outils de réécriture infinitaire [<a href="#papiers-mi-J1">J1</a>,<a href="#papiers-mi-T1">T1</a>,<a href="#papiers-mi-P2">P2</a>,<a href="#papiers-mi-U3">U3</a>]. 
+        Dans ma thèse avec <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a>, j'ai reformulé l'approximation linéaire des programmes fonctionnels (<i>alias</i> développement de Taylor pour le λ-calcul) à l'aide d'outils de réécriture infinitaire [<a href="#papiers-mi-J1">J1</a>,<a href="#papiers-mi-T1">T1</a>,<a href="#papiers-mi-P2">P2</a>,<a href="#papiers-mi-U2">U2</a>]. 
     </li>
     <li lang="en">
-        During my PhD with <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a>, I have been reformulating the linear approximation of functional programs (aka Taylor expansion for the λ-calculus) using infinitary rewriting [<a href="#papiers-mi-J1">J1</a>,<a href="#papiers-mi-T1">T1</a>,<a href="#papiers-mi-P2">P2</a>,<a href="#papiers-mi-U3">U3</a>]. 
+        During my PhD with <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a>, I have been reformulating the linear approximation of functional programs (aka Taylor expansion for the λ-calculus) using infinitary rewriting [<a href="#papiers-mi-J1">J1</a>,<a href="#papiers-mi-T1">T1</a>,<a href="#papiers-mi-P2">P2</a>,<a href="#papiers-mi-U2">U2</a>]. 
     </li>
 
     <li lang="fr">
-        Je travaille actuellement avec <a href="https://www.irif.fr/~gmanzone/" target="_blank">Giulio Manzonetto</a> et <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> sur un raffinement de cette approximation de programmes et de la sémantique quantitative associée, dans le but de capturer le (non-)effacement de portions de programmes le long de calculs infinis [<a href="#papiers-mi-U1">U1</a>].
+        Je travaille actuellement avec <a href="https://www.irif.fr/~gmanzone/" target="_blank">Giulio Manzonetto</a> et <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> sur un raffinement de cette approximation de programmes et de la sémantique quantitative associée, dans le but de capturer le (non-)effacement de portions de programmes le long de calculs infinis [<a href="#papiers-mi-P3">P3</a>].
     </li>
     <li lang="en">
-        I am currently working with <a href="https://www.irif.fr/~gmanzone/" target="_blank">Giulio Manzonetto</a> and <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> on refinements of this program approximation and the associated quantitative semantics, to capture (non-)erasure of data along infinite computations [<a href="#papiers-mi-1">U1</a>].
+        I am currently working with <a href="https://www.irif.fr/~gmanzone/" target="_blank">Giulio Manzonetto</a> and <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> on refinements of this program approximation and the associated quantitative semantics, to capture (non-)erasure of data along infinite computations [<a href="#papiers-mi-P3">P3</a>].
     </li>
 </ul>
 
@@ -77,10 +77,10 @@ start_content(
     </li>
 
     <li lang="fr">
-        En ce moment, je travaille principalement sur des systèmes de preuve non-bien-fondées pour des logiques avec points fixes. En particulier, avec <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> j'étudie la réécriture infinitaire de dérivations non-bien-fondées [<a href="#papiers-mi-U2">U2</a>]. Avec <a href="https://www.irif.fr/~mellies/" target="_blank">Paul-André Melliès</a>, nous cherchons également à connecter ce formalisme avec les automates d'ordre supérieur et les questions de vérification liées.
+        En ce moment, je travaille principalement sur des systèmes de preuve non-bien-fondées pour des logiques avec points fixes. En particulier, avec <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> j'étudie la réécriture infinitaire de dérivations non-bien-fondées [<a href="#papiers-mi-U1">U1</a>]. Avec <a href="https://www.irif.fr/~mellies/" target="_blank">Paul-André Melliès</a>, nous cherchons également à connecter ce formalisme avec les automates d'ordre supérieur et les questions de vérification liées.
     </li>
     <li lang="en">
-        Currently, I'm mainly working on non-wellfounded proof theory for logics with fixed points. In particular, I'm investigating infinitary rewriting of non-wellfounded derivations with <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> [<a href="#papiers-mi-U2">U2</a>]. With <a href="https://www.irif.fr/~mellies/" target="_blank">Paul-André Melliès</a>, we also look for connections of this formalism with higher-order automata and verification.
+        Currently, I'm mainly working on non-wellfounded proof theory for logics with fixed points. In particular, I'm investigating infinitary rewriting of non-wellfounded derivations with <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> [<a href="#papiers-mi-U1">U1</a>]. With <a href="https://www.irif.fr/~mellies/" target="_blank">Paul-André Melliès</a>, we also look for connections of this formalism with higher-order automata and verification.
     </li>
 </ul>
 
