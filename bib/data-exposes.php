@@ -57,6 +57,146 @@ $data = [
     */
 
     array(
+        // Mandatory parameters
+        'title'         => 
+            "Confluence of 001- and 101-infinitary λ-calculi by linear approximation",
+        'type'          => "conference",
+        'date'          => "2025-09-02",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://iwc2025.github.io/\" target=\"_blank\">IWC&nbsp;2025</a>",
+        'location'      => "Leipzig", 
+        'info'          => "",
+        'pdf'           => "./fichiers/exposes/simulation-iwc.pdf",
+        'video'         => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => 
+            "The lazy evaluation of the λ-calculus enjoys linear approximation, and that's all",
+        'type'          => "conference",
+        'date'          => "2025-07-20",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/lazy-taylor-tlla.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/lazy-taylor-tlla-slides.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         =>
+            "Ohana trees and Taylor expansion for the λI-calculus. No variable gets left behind or forgotten!",
+        'type'          => "conference",
+        'date'          => "2025-07-18",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://fscd2025.github.io/\" target=\"_blank\">FSCD&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/ohana.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/ohana-fscd.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => "Compression for Coinductive Infinitary Rewriting
+            (A Preliminary Account)",
+        'type'          => "conference",
+        'date'          => "2025-07-14",
+        // Optional parameters (can be removed)
+        'event'         => 
+            "<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>",
+        'location'      => "Birmingham", 
+        'info'          => "",
+        'pdf'           => "./fichiers/papiers/compression-hor.pdf",
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/compression-hor-slides.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => 
+            "Linear approximation of functional programs, revisited",
+        'type'          => "seminar",
+        'date'          => "2025-04-02",
+        // Optional parameters (can be removed)
+        'event'         => "Séminaire APR",
+        'location'      => "LIP6, Paris", 
+        'info'          => null,
+        'pdf'           => null,
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/2025 04 02 séminaire lip6.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => 
+            "Continous and linear approximations for the λ-calculus",
+        'type'          => "dissemination",
+        'date'          => "2025-03-26",
+        // Optional parameters (can be removed)
+        'event'         => "M2 LMFI",
+        'location'      => "Université Paris Cité", 
+        'info'          => array(
+            "fr" => "Séance invitée dans le cours spécialisé <a href=\"https://master.math.u-paris.fr/modules/m2lmfi-ppcs/\" target=\"_blank\">Linear Logic and Quantitative Semantics</a>.",
+            "en" => "Invited lecture for the “cours spécialisé” <a href=\"https://master.math.u-paris.fr/modules/m2lmfi-ppcs/\" target=\"_blank\">Linear Logic and Quantitative Semantics</a>.",
+        ),
+        'pdf'           => "./fichiers/exposes/2025 03 26 LMFI continuous and linear approx.pdf",
+        'video'         => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => "How to Play the Accordion: Uniformity and the (Non-)Conservativity of the Linear Approximation of the λ-Calculus",
+        'type'          => "conference",
+        'date'          => "2025-03-05",
+        // Optional parameters (can be removed)
+        'event'         => "STACS 2025",
+        'location'      => "Jena", 
+        'info'          => "",
+        'pdf'           => null,
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/conservativity-stacs.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => "The missing ingredient in the linear approximation of the λ-calculus (and other autobiographical stuff)",
+        'type'          => "seminar",
+        'date'          => "2024-11-28",
+        // Optional parameters (can be removed)
+        'event'         => "PPS “back to work” day",
+        'location'      => "IRIF, Paris", 
+        'info'          => "",
+        'pdf'           => null,
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/2024 11 28 autobiographie pps.pdf",
+    ),
+
+    array(
+        // Mandatory parameters
+        'title'         => "The linear approximation of the λ-calculus:
+            A new presentation of an old thing",
+        'type'          => "seminar",
+        'date'          => "2024-09-26",
+        // Optional parameters (can be removed)
+        'event'         => "séminaire LoVe",
+        'location'      => "LIPN, Villetaneuse", 
+        'info'          => "",
+        'pdf'           => null,
+        'video'         => null,
+        'slides'        => "./fichiers/exposes/2024 09 26 taylor lipn.pdf",
+    ),
+
+    array(
         'title'         => 
             "Taylor Approximation and Infinitary λ-Calculi",
         'event'         => 

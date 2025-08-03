@@ -50,6 +50,7 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "",
         'title'         => "",
         'authors'       => [""],
         'type'          => "",
@@ -74,15 +75,102 @@ $data = [
     */
 
     array(
+        // Mandatory parameters
+        'bibid'         => "U2",
+        'title'         => 
+            "The lazy evaluation of the λ-calculus enjoys linear approximation, and that’s all",
+        'authors'       => ["R.C."],
+        'type'          => "unpublished",
+        'status'        => "submitted",
+        'date'          => "2025-05-28",
+        // Optional parameters (can be removed)
+        'info'          => array(
+            'en' => "Abstract submitted to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>). Long version to be submitted soon...",
+            'fr' => "Résumé soumis au 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>). Version longue à venir...",
+        ),
+        'abstract'      =>
+            "<p>
+            The advent of a linear approximation of the λ-calculus based on Taylor expansion allowed for a renewal and a refinement of the classic approach based on continuous approximation. The major property of the linear approximation, known as the Commutation theorem, relates the infinitary head normalisation of a λ-term towards its Böhm tree to the (finitary) normalisation of its Taylor expansion, that is, the sum of its multilinear approximants.
+            This approximation theory is therefore related to the standard evaluation of λ-terms, that retains head normal forms as meaningful prefixes of information ; in this work, we adapt it to the lazy evaluation where weak head normal forms play this role. We introduce a lazy resource λ-calculus and the corresponding Taylor expansion, and show that it simulates the 101-infinitary λ-calculus. In particular, we obtain a Commutation theorem with respect to Lévy-Longo trees.
+            This shows that a second normal form model enjoys a linear approximation, out of the \(2^c\) existing normal form models (where \(c\) is the cardinality of the continuum). We conclude by noticing that there cannot be such a linear approximation for all other such models, and in particular for Berarducci trees.
+            </p>",
+        'pdf'           => "./fichiers/papiers/lazy-taylor-tlla.pdf",
+        'arxiv'         => null,
+        'hal'           => null,
+        'code'          => null,
+        'video'         => null,
+        'url'           => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'bibid'         => "U1",
+        'title'         => 
+            "Compression for Coinductive Infinitary Rewriting (A Preliminary Account)",
+        'authors'       => ["R.C.", "Alexis Saurin"],
+        'type'          => "unpublished",
+        'status'        => "submitted",
+        'date'          => "2025-05-21",
+        // Optional parameters (can be removed)
+        'info'          => array(
+            'en' => "Abstract submitted to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
+            'fr' => "Résumé soumis au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
+        ),
+        'abstract'      =>
+            "<p>
+            In “traditional” infinitary rewriting based on ordinal-indexed rewriting sequences and strong Cauchy convergence, a key property of rewriting systems is compression, that is, the fact that rewriting sequences of arbitrary ordinal length can be compressed to sequences of length ω. Famous examples of compressible systems are left-linear first-order systems and infinitary λ-calculi.
+            In this work, we investigate compression in the equivalent setting of coinductive infinitary rewriting, which we recall in a slightly augmented form: we extend it to rewriting of (possibly non-wellfounded) derivations in an arbitrary sytem of derivation rules. Then we define the coinductive counterpart of compressed rewriting sequences, and we present a general coinductive procedure turning arbitrary infinitary rewriting derivations into compressed ones, without relying on convergence. The coinductive presentation of the two aforementioned examples are endowed with compression lemmas as instances of our general method.
+            </p>",
+        'pdf'           => "./fichiers/papiers/compression-hor.pdf",
+        'arxiv'         => null,
+        'hal'           => null,
+        'code'          => null,
+        'video'         => null,
+        'url'           => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'bibid'         => "P3",
+        'title'         => 
+            "Ohana trees and Taylor expansion for the λI-calculus.
+            No variable gets left behind or forgotten!",
+        'authors'       => ["R.C.", "G.&nbsp;Manzonetto", "A.&nbsp;Saurin"],
+        'type'          => "proceedings",
+        'status'        => "",
+        'date'          => "2025-07-07",
+        // Optional parameters (can be removed)
+        'info'          => 
+            "<i>10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)</i>, LIPIcs vol.&nbsp;337.",
+        'abstract'      =>
+            "<p>
+            Although the λI-calculus is a natural fragment of the λ-calculus, obtained by forbidding the erasure, its equational theories did not receive much attention. The reason is that all proper denotational models studied in the literature equate all non-normalizable λI-terms, whence the associated theory is not very informative. The goal of this paper is to introduce a previously unknown theory of the λI-calculus, induced by a notion of evaluation trees that we call ‘Ohana trees’. The Ohana tree of a λI-term is an annotated version of its Böhm tree, remembering all free variables that are hidden within its meaningless subtrees, or pushed into infinity along its infinite branches.
+            </p><p>
+            We develop the associated theories of program approximation: the first approach—more classic—is based on finite trees and continuity, the second adapts Ehrhard and Regnier’s Taylor expansion. We then prove a Commutation Theorem stating that the normal form of the Taylor expansion of a λI-term coincides with the Taylor expansion of its Ohana tree. As a corollary, we obtain that the equality induced by Ohana trees is compatible with abstraction and application. We conclude by discussing the cases of Lévy-Longo and Berarducci trees, and generalizations to the full λ-calculus.
+            </p>",
+        'pdf'           => "./fichiers/papiers/ohana.pdf",
+        'arxiv'         => "2505.06193",
+        'hal'           => null,
+        'code'          => null,
+        'video'         => null,
+        'url'           => null,
+        'slides'        => null,
+        'doi'           => "10.4230/LIPIcs.FSCD.2025.12",
+    ),
+
+    array(
+        'bibid'         => "T1",
         'title'         => "Taylor Approximation and Infinitary λ-Calculi",
         'authors'       => ["R.C."],
         'type'          => "thesis",
         'status'        => null,
         'date'          => "2024-06-10",
         'info'          => array(
-            'fr' => "Thèse de doctorat (version pré-soutenance).
+            'fr' => "Thèse de doctorat.
                 Sous la direction de L.&nbsp;Vaux Auclair et L.&nbsp;Regnier.",
-            'en' => "PhD thesis (pre-defense version).
+            'en' => "PhD thesis.
                 Under the supervision of L.&nbsp;Vaux Auclair et L.&nbsp;Regnier.",
         ),
         'pdf'           => "./fichiers/papiers/these.pdf",
@@ -106,6 +194,7 @@ $data = [
     ),
 
     array(
+        'bibid'         => "P1",
         'title'         => "Nominal Algebraic-Coalgebraic Data Types, with 
             Applications to Infinitary λ-Calculi. A fanfiction on
             <a href=\"https://lmcs.episciences.org/865\"
@@ -115,14 +204,14 @@ $data = [
         'status'        => "accepted",
         'date'          => "2024-04-19",
         'info'          => array(
-            'en' => "Extended abstract accepted by
+            'en' => "To appear in the proceedings of
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
                 target=\"_blank\">FICS 2024</a>.
-                See Chapter&nbsp;1 of my thesis for more details.",
-            'fr' => "Version courte acceptée pour communication à
+                See Chapter&nbsp;1 of my thesis for a longer version.",
+            'fr' => "À paraître dans les actes de
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
                 target=\"_blank\">FICS 2024</a>.
-                Plus de détails dans le chapitre&nbsp;1 de ma thèse.",
+                Version plus détaillée dans le chapitre&nbsp;1 de ma thèse.",
         ),
         'abstract'      => 
             "<p>
@@ -142,39 +231,29 @@ $data = [
     ),
 
     array(
-        'title'         => "How To Play The Accordion.
-            On the (Non-)Conservativity of the Reduction Induced by the
-            Taylor Approximation of λ-Terms",
+        'bibid'         => "P2",
+        'title'         => "How to play the Accordion.
+            Uniformity and the (non-)conservativity of the
+            linear approximation of the λ-calculus",
         'authors'       => ["R.C.", "L.&nbsp;Vaux&nbsp;Auclair"],
-        'type'          => "unpublished",
-        'status'        => "draft",
-        'date'          => "2023-05-03",
+        'type'          => "proceedings",
+        'status'        => null,
+        'date'          => "2025-02-24",
+        'info'          => 
+            "<i>42nd International Symposium on Theoretical Aspects of Computer Science (STACS 2025)</i>, LIPIcs vol.&nbsp;327.",
         'abstract'      =>
             "<p>
-            The Taylor expansion, which stems from Linear Logic and its 
-            differential extensions, is an approximation framework for the 
-            λ-calculus (and many of its variants). 
-            The reduction of the approximants of a λ-term induces a reduction 
-            on the λ-term itself, which enjoys a simulation property: 
-            whenever a term reduces to another, the approximants reduce 
-            accordingly. In recent work, we extended this result to an 
-            infinitary λ-calculus (namely, \(\Lambda_{\infty}^{001}\)).
+            Twenty years after its introduction by Ehrhard and Regnier, differentiation in λ-calculus and in linear logic is now
+            a celebrated tool. In particular, it allows to write the Taylor formula in various λ-calculi, hence providing a theory of linear approximations for these calculi. In the standard λ-calculus, this linear approximation is expressed by results stating that the (possibly) infinitary β-reduction of λ-terms is simulated by the reduction of their Taylor expansion: in terms of rewriting systems, the resource reduction (operating on Taylor approximants) is an extension of the β-reduction.
             </p><p>
-            This short paper solves the question whether the converse property 
-            also holds: if the approximants of some term reduce to the 
-            approximants of another term, 
-            is there a β-reduction between these terms?
-            </p><p>
-            This happens to be true for the λ-calculus, as we show, 
-            but our proof fails in the infinitary case. 
-            We exhibit a counter-example, refuting the conservativity for 
-            \(\Lambda_{\infty}^{001}\). 
+            In this paper, we address the converse property, conservativity: are there reductions of the Taylor approximants that do not arise from an actual β-reduction of the approximated term? We show that if we restrict the setting to finite terms and β-reduction sequences, then the linear approximation is conservative. However, as soon as one allows infinitary reduction sequences this property is broken. We design a counter-example, the Accordion. Then we show how restricting the reduction of the Taylor approximants allows to build a conservative extension of the β-reduction preserving good simulation properties. This restriction relies on uniformity, a property that was already at the core of Ehrhard and Regnier's pioneering work.
             </p>",
         'pdf'           => "./fichiers/papiers/conservativity.pdf",
-        'arxiv'         => "2305.02785",
+        'doi'           => "10.4230/LIPIcs.STACS.2025.23",
     ),
     
     array(
+        'bibid'         => "J1",
         'title'         => "Finitary Simulation of Infinitary β-Reduction
             via Taylor Expansion, and Applications",
         'authors'       => ["R.C.", "L.&nbsp;Vaux&nbsp;Auclair"],

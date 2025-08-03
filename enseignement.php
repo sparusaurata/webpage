@@ -33,9 +33,9 @@ start_content(
     <dt>Département d'informatique</dt>
     <dd><b>Algorithmique des graphes</b>, CM-TD, L2 MIASHS, avec H.&nbsp;Daudé.</dd>
     <dd><b>Calculabilité</b>, TD, L3 Informatique, avec K.&nbsp;Perrot.</dd>
-    <dd><b>Structures discrètes</b>, TP, L2 Informatique, avec A.&nbsp;Milani.</dd>
-    <dd><b>Mise en œuvre informatique</b> (introduction à l'algorithmique), TD-TP, L1 (portail), avec L.&nbsp;Becerra.</dd>
-    <dd><b>Bases de données</b>, TD-TP, L3 Informatique, avec L.&nbsp;Santocanale.</dd>
+    <dd><b>Structures discrètes</b>, TP (Java), L2 Informatique, avec A.&nbsp;Milani.</dd>
+    <dd><b>Mise en œuvre informatique</b> (introduction à l'algorithmique), TD-TP (Python), L1 (portail), avec L.&nbsp;Becerra.</dd>
+    <dd><b>Bases de données</b>, TD-TP (SQL), L3 Informatique, avec L.&nbsp;Santocanale.</dd>
 </dl>
 
 <p>

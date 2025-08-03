@@ -75,6 +75,7 @@ $data = [
     */
 
     array(
+        'bibid'         => "T1",
         'title'         => "Coller en mathématiques. Rite disciplinaire et 
             formation des élites",
         'authors'       => ["R.C."],
@@ -91,6 +92,7 @@ $data = [
         ),
     ),
     array(
+        'bibid'         => "C1",
         'title'         => "Pêcher des poissons pour leur apprendre à
             nager&nbsp;? II.&nbsp;En «&nbsp;colles&nbsp;», les mathématiques au 
             service d'une formation élitiste",

@@ -19,13 +19,13 @@ start_content(
 
 <p lang="fr">
 <img class="me" src="fichiers/rc.jpg">
-    Je suis (sur le point de devenir) post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, à Paris.
-    Je travaillerai au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> conduit par <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
+    Je suis post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, à Paris.
+    Je travaille au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> conduit par <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
 </p>
 <p lang="en">
     <img class="me" src="fichiers/rc.jpg">
-    I'm (about to become) a post-doctoral researcher at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in Paris.
-    I will be working in the project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> led by <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
+    I'm a post-doctoral researcher at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in Paris.
+    I'm working in the project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> led by <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
 </p>
 
 <p lang="fr">
@@ -38,42 +38,62 @@ start_content(
 </p>
 
 <p lang="fr">
-    Mes intérêts de recherche sont principalement situés entre la logique mathématique et l'informatique théorique, et sont portés par la <a href="https://fr.wikipedia.org/wiki/Correspondance_de_Curry-Howard" target="_blank">correspondance de Curry-Howard</a>.
-    Ils incluent notamment le λ-calcul, la logique linéaire, la réécriture infinitaire, la théorie de la démonstration dans un cadre non-bien fondé, l'approximation de programmes, la sémantique des langages de programmation.
+    En recherche, je m'intéresse principalement à des questions d'informatique théorique, à l'interface entre la logique mathématique et la théorie de la programmation. J'ai travaillé (ou travaille actuellement) sur&nbsp;:
+    l'approximation de programmes, la sémantique des langages de programmation, le λ-calcul, la coinduction, la réécriture infinitaire, la dynamique topologique de la précédente, la syntaxe nominale, les logiques avec points fixes, les automates d'ordre supérieur.
     Plus de détails sur <a href="recherche.php">la page dédiée</a>.
 </p>
 <p lang="en">
-    My research interests mainly lie between mathematical logic and theoretical computer science, and are driven by the <a href="https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence" target="_blank">Curry-Howard correspondence</a>.
-    They include λ-calculus, linear logic, infinitary rewriting, non-wellfounded proof theory, program approximation, semantics of programming languages. 
+    My research interests are mainly in Theoretical Computer science, at the interface of mathematical logic and the theory of programming.
+    I have been (or am currently) working on:
+    program approximation, program semantics, λ-calculus, coinduction, infinitary rewriting and its topological dynamics, nominal syntax, logics with fixed points, higher-order automata.
     See more details on <a href="recherche.php?lang=en">the dedicated page</a>.
 </p>
 
 <!------------------------------------->
 
-<details class="h2summary"">
+<details class="h2summary" open>
 <summary>
     <span lang="fr">Nouvelles</span>
     <span lang="en">News</span>
 </summary>
 
 <dl>
+    <dt lang="fr">Juil. 2025</dt>
+    <dt lang="en">July 2025</dt>
+    <dd lang="fr">
+        Notre <a href="./fichiers/papiers/ohana.pdf" target="_blank">papier</a> sur les «&nbsp;Ohana trees&nbsp;» (avec Giulio Manzonetto et Alexis Saurin) a paru dans les actes de à <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>.
+        On se voit à Birmingham&nbsp;? Au passage, je parlerai aussi à <a href="https://hor2025.github.io/" target="_blank">HOR</a> et <a href="TLLA" target="_blank">TLLA</a>.
+    </dd>
+    <dd lang="en">
+        Our <a href="./fichiers/papiers/ohana.pdf" target="_blank">paper</a> on “Ohana trees” (with Giulio Manzonetto and Alexis Saurin) has been published in the proceedings of <a href="https://fscd2025.github.io/" target="_blank">FSCD&nbsp;2025</a>. See you in Birmingham! By the way, I'll also give talks at <a href="https://hor2025.github.io/" target="_blank">HOR</a> and <a href="TLLA" target="_blank">TLLA</a>.
+    </dd>
+
+    <dt lang="fr">Fév. 2025</dt>
+    <dt lang="en">Feb. 2025</dt>
+    <dd lang="fr">
+        Notre article <a href="https://doi.org/10.4230/LIPIcs.STACS.2025.23" target="_blank">«&nbsp;How To Play The Accordion&nbsp;»</a> (avec Lionel Vaux Auclair), autour de la conversativité de l'approximation de Taylor du λ-calcul, a paru dans les actes de <a href="https://www.stacs2025.de/" target="_blank">STACS 2025</a>.
+    </dd>
+    <dd lang="en">
+        Our paper <a href="https://doi.org/10.4230/LIPIcs.STACS.2025.23" target="_blank">“How To Play The Accordion”</a> (with Lionel Vaux Auclair), about conservativity properties for the Taylor approximation of the λ-calculus, just appeared in the proceedings of <a href="https://www.stacs2025.de/" target="_blank">STACS 2025</a>.
+    </dd>
+
     <dt>Oct. 2024</dt>
     <dd lang="fr">
         Le 1er&nbsp;octobre, je commence un post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, avec <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a> au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a>.
     </dd>
     <dd lang="en">
-        On Oct.&nbsp;1st, I will start a post-doc at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>'s project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a>.
+        On Oct.&nbsp;1st, I start a post-doc at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>'s project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a>.
     </dd>
 
     <dt lang="fr">Juin 2024</dt>
     <dt lang="en">June 2024</dt>
     <dd lang="fr">
         Ma soutenance de thèse a lieu le 10&nbsp;juin.
-        Voir (une version préliminaire de) <a href="fichiers/these/manuscrit.pdf" target="_blank">mon manuscrit</a>, intitulé <i>Taylor expansion and Infinitary λ-calculi</i>, et <a href="fichiers/exposes/soutenance.pdf" target="_blank">les diapos</a> de la soutenance.
+        Voir <a href="fichiers/papiers/these.pdf" target="_blank">mon manuscrit</a>, intitulé <i>Taylor expansion and Infinitary λ-calculi</i>, et <a href="fichiers/exposes/soutenance.pdf" target="_blank">les diapos</a> de la soutenance.
     </dd>
     <dd lang="en">
         My PhD defence takes place on June&nbsp;10th.
-        See (a preliminary version of) <a href="fichiers/these/manuscrit.pdf" target="_blank">the manuscript</a>, entitled <i>Taylor expansion and Infinitary λ-calculi</i>, and <a href="fichiers/exposes/soutenance.pdf" target="_blank">the slides</a> of the defence.
+        See <a href="fichiers/papiers/these.pdf" target="_blank">the manuscript</a>, entitled <i>Taylor expansion and Infinitary λ-calculi</i>, and <a href="fichiers/exposes/soutenance.pdf" target="_blank">the slides</a> of the defence.
     </dd>
 
     <dt lang="fr">Mai 2024</dt>
@@ -89,7 +109,7 @@ start_content(
 </dl>
 
 <p lang="fr">
-    Voir aussi une <a href="recherche.php?lang=en#exposes">liste d'exposés récents</a> avec leurs diapos.
+    Voir aussi une <a href="recherche.php#exposes">liste d'exposés récents</a> avec leurs diapos.
 </p>
 <p lang="en">
     See also a <a href="recherche.php#exposes">list of recent talks</a> with their slides.
@@ -108,15 +128,19 @@ start_content(
     <dt lang="fr">Bureau</dt>
     <dt lang="en">Office</dt>
     <dd lang="fr">
-        Actuellement quelque part dans <a href="https://youtu.be/3aREKqn8g9k?si=Byrw-Vs9ZdqzxcJg&t=224" target="_blank">un TGV</a> entre Marseille et Paris.
+        Bâtiment <a href="https://www.openstreetmap.org/way/286296494" target="_blank" title="Voir sur la carte">Sophie Germain</a>,
+        3e&nbsp;étage, bureau&nbsp;3057<br>
+        8 place Aurélie Nemours, Paris (13e)
     </dd>
     <dd lang="en">
-        Currently somewhere in <a href="https://youtu.be/3aREKqn8g9k?si=Byrw-Vs9ZdqzxcJg&t=224" target="_blank">a TGV</a> between Marseille and Paris.
+        <a href="https://www.openstreetmap.org/way/286296494" target="_blank" title="See on the map">Sophie Germain</a> building,
+        3rd&nbsp;floor, office&nbsp;3057<br>
+        8 place Aurélie Nemours, Paris (13e)
     </dd>
 
     <dt>E-mail</dt>
     <dd>
-        rcerda <i>at</i> math <i>dot</i> cnrs <i>dot</i> fr
+        remy <i>dot</i> cerda <i>at</i> math <i>dot</i> cnrs <i>dot</i> fr
     </dd>
     <dd lang="fr">
         <a href="fichiers/rc.asc" target="_blank">Clé publique PGP</a>
