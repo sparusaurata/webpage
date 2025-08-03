@@ -12,7 +12,7 @@
 
 
 /* Set to true to show more error messages. */
-$debugging = false;
+$debugging = true;
 if ( $debugging ) {
     /* Uncomment the following line if you're trying to find the server root. */
     //echo "The current directory is " . getenv("PWD") . ".";
@@ -161,9 +161,9 @@ function publications(
         throw new InvalidArgumentException("Function publications():
         the argument \$groupby should be null, 'date' or 'type'.");
     }
-
+    
     echo get_list(
-        "get_paper", $id, ["papers"] + $class,
+        "get_paper", $id, array_merge(["papers"], $class),
         $datafile, $data, $oldfirst,
         $groupby, $groups, $groupheadtag,
         $foldable, $folded, $firstfolded
@@ -584,7 +584,8 @@ function get_list(
     else {
         $out2 = "";
         foreach ( $data as $key => $item ) {
-            $out2 .= $get_item($item, $id . "-" . $key);
+            $out2 .= $get_item($item, $id); 
+            // here there used to be $id . "-" . $key
         }
         if ( $out2 ) {
             $out .= html_tag(
@@ -615,6 +616,9 @@ function usorter_by_date( $reversed = true ) {
 
 function get_paper( $paper, $id ) {
     global $settings, $pagedata;
+
+    $bibid = html_tag("div", ["class" => "p-bibid " . $paper['type']],
+        "[" . $paper['bibid'] . "]");
 
     $title =  html_tag("span", ["class" => "p-title"], $paper['title']);
 
@@ -702,8 +706,8 @@ function get_paper( $paper, $id ) {
         $abstract = "";
     }
 
-    return html_tag("li", 
-        ["id" => $id], 
+    return $bibid . html_tag("li", 
+        ["id" => $id . '-' . $paper['bibid']], // here there used to be $id
         $head . $details . $links . $abstract
     );
 }
