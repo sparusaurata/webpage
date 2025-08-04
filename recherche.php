@@ -110,7 +110,7 @@ start_content(
     <a href="https://arxiv.org/a/cerda_r_1" target="_blank">arXiv</a>.
 </p>
 
-<?php publications(
+<?php echo publications(
     id: "papiers-mi",
     datafile: "bib/data-papiers-mi.php",
     class: ["spaceabove"],
@@ -123,7 +123,7 @@ start_content(
 <span lang="en">Talks</span>
 </h2>
 
-<?php talks(
+<?php echo talks(
     id: "exposes",
     datafile: "bib/data-exposes.php",
     groupby: "date",
@@ -165,7 +165,7 @@ start_content(
     Here is a list of my written work in this domain.
 </p>
 
-<?php publications(
+<?php echo publications(
     id: "papiers-shs",
     datafile: "bib/data-papiers-shs.php",
     class: ["spaceabove"],
