@@ -22,7 +22,7 @@ global $settings;
  * web server. If the URL to your website is https://www.site.ext/path/to/site,
  * this should be set to "/path/to/site/". 
  */
-$settings['site root'] = "/";
+$settings['site root'] = "/webpage-template/";
 
 
 /**
