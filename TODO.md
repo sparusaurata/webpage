@@ -1,6 +1,6 @@
 # Améliorer les listes de publications
 
-- Les références sont repérées par leur bibid
+- ~~Les références sont repérées par leur bibid~~
 - Réparer l'affichage du résumé
 - ~~Distinguer la génération des listes de leur affichage~~
 - Plusieurs styles de listes

@@ -164,9 +164,10 @@ function publications(
     
     return get_list(
         "get_paper", $id, array_merge(["papers"], $class),
+        function ($key, $item) { return $item['bibid']; },
         $datafile, $data, $oldfirst,
         $groupby, $groups, $groupheadtag,
-        $foldable, $folded, $firstfolded
+        $foldable, $folded, $firstfolded,
     );
 }
 
@@ -220,6 +221,7 @@ function talks(
 
     return get_list(
         "get_talk", $id, ["talks"] + $class,
+        function ($key, $item) { return $key; },
         $datafile, $data, $oldfirst,
         $groupby, $groups, $groupheadtag,
         $foldable, $folded, $firstfolded
@@ -518,11 +520,11 @@ function html_tag (
 }
 
 
-////////// LISTS OF PUBLICATIONS //////////////////////////////////////////////
+////////// LISTS OF PUBLICATIONS AND TALKS ////////////////////////////////////
 
 
 function get_list(
-    $get_item, $id, $class,
+    $get_item, $id, $class, $idgenerator,
     $datafile = null, $data = null, $oldfirst = false,
     $groupby = null, $groups = null, $groupheadtag = "h3",
     $foldable = false, $folded = true, $firstfolded = false
@@ -554,7 +556,8 @@ function get_list(
             $content = get_list(
                 $get_item,
                 $id . "-" . $groupkey,
-                $class,
+                $class, 
+                $idgenerator,
                 null, 
                 array_filter($data, fn($item) => $item[$groupby] == $groupkey)
             );
@@ -584,8 +587,7 @@ function get_list(
     else {
         $out2 = "";
         foreach ( $data as $key => $item ) {
-            $out2 .= $get_item($item, $id); 
-            // here there used to be $id . "-" . $key
+            $out2 .= $get_item($item, $id . "-" . $idgenerator($key, $item)); 
         }
         if ( $out2 ) {
             $out .= html_tag(
@@ -707,7 +709,7 @@ function get_paper( $paper, $id ) {
     }
 
     return $bibid . html_tag("li", 
-        ["id" => $id . '-' . $paper['bibid']], // here there used to be $id
+        ["id" => $id],
         $head . $details . $links . $abstract
     );
 }
