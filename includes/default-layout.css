@@ -208,26 +208,9 @@ nav#nav-main {
 
 /********** Lists of publications and talks **********************************/
 
-.papers {
-    list-style-type: none;
-}
-
 .papers li {
     margin-bottom: .8em;
 }
-
-.p-bibid {
-    display: list-item;
-    float: left;
-    width: 50px;
-    margin-left: -50px;
-}
-    .p-bibid.book { color: #f8c91f; }
-    .p-bibid.journal { color: #c71a6b; }
-    .p-bibid.bookchapter { color: #e47b04; }
-    .p-bibid.proceedings { color: #1767d6; }
-    .p-bibid.thesis { color: #f8c91f; }
-    .p-bibid.unpublished { color: #888; }
 
 .p-title {
     font-weight: bold;

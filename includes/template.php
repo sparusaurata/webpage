@@ -619,9 +619,6 @@ function usorter_by_date( $reversed = true ) {
 function get_paper( $paper, $id ) {
     global $settings, $pagedata;
 
-    $bibid = html_tag("div", ["class" => "p-bibid " . $paper['type']],
-        "[" . $paper['bibid'] . "]");
-
     $title =  html_tag("span", ["class" => "p-title"], $paper['title']);
 
     if ( array_key_exists('status', $paper) and $paper['status'] ) {
@@ -708,7 +705,7 @@ function get_paper( $paper, $id ) {
         $abstract = "";
     }
 
-    return $bibid . html_tag("li", 
+    return html_tag("li", 
         ["id" => $id],
         $head . $details . $links . $abstract
     );
