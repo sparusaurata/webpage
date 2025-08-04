@@ -162,7 +162,7 @@ function publications(
         the argument \$groupby should be null, 'date' or 'type'.");
     }
     
-    echo get_list(
+    return get_list(
         "get_paper", $id, array_merge(["papers"], $class),
         $datafile, $data, $oldfirst,
         $groupby, $groups, $groupheadtag,
@@ -218,7 +218,7 @@ function talks(
         the argument \$groupby should be null, 'date' or 'type'.");
     }
 
-    echo get_list(
+    return get_list(
         "get_talk", $id, ["talks"] + $class,
         $datafile, $data, $oldfirst,
         $groupby, $groups, $groupheadtag,
