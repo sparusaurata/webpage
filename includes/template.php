@@ -530,7 +530,7 @@ function get_list(
     $foldable = false, $folded = true, $firstfolded = false
 ) {
     global $settings, $pagedata;
-    $out = "";
+    $style = ""; $list = "";
     
     if ( $datafile ) {
         include($datafile);
@@ -569,36 +569,45 @@ function get_list(
                         $attr["open"] = null;
                     }
                     $firstfolded = true;
-                    $out .= html_tag("details", $attr,
+                    $list .= html_tag("details", $attr,
                         html_tag("summary", [], $head) . $content
                     );
                 } else {
-                    $out .= html_tag(
+                    $list .= html_tag(
                         $groupheadtag, 
                         ["class" => implode(" ", $class)], 
                         $head
                     );
-                    $out .= $content;
+                    $list .= $content;
                 }
             }
         }
     }
 
     else {
-        $out2 = "";
+        $listcontent = "";
         foreach ( $data as $key => $item ) {
-            $out2 .= $get_item($item, $id . "-" . $idgenerator($key, $item)); 
+            $element = $get_item(
+                $item, 
+                $id . "-" . $idgenerator($key, $item)
+            );
+            $listcontent .= $element['li'];
+            $style .= $element['style'];
         }
-        if ( $out2 ) {
-            $out .= html_tag(
+        if ( $listcontent ) {
+            $list .= html_tag(
                 "ul",
                 ["class" => implode(" ", $class + ["ptlist"])],
-                $out2
+                $listcontent
             );
         }
     }
 
-    return $out;
+    if ( $style ) {
+        $style = "<style>" . $style . "</style";
+    }
+
+    return $style . $list;
 }
 
 
@@ -705,9 +714,12 @@ function get_paper( $paper, $id ) {
         $abstract = "";
     }
 
-    return html_tag("li", 
-        ["id" => $id],
-        $head . $details . $links . $abstract
+    return array(
+        'li' => html_tag("li", 
+                ["id" => $id],
+                $head . $details . $links . $abstract
+            ),
+        'style' => ""
     );
 }
 
@@ -752,9 +764,12 @@ function get_talk( $talk, $id ) {
         $links = html_tag("span", ["class" => "t-links"], $links);
     }
 
-    return html_tag("li", 
-        ["id" => $id], 
-        $title . $details . $links
+    return array(
+        'li' => html_tag("li", 
+                ["id" => $id], 
+                $title . $details . $links
+            ),
+        'style' => ""
     );
 }
 

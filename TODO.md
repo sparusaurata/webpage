@@ -5,19 +5,9 @@
 - ~~Distinguer la génération des listes de leur affichage~~
 - Plusieurs styles de listes
     + ~~supprimer les puces existantes et commenter les styles~~
-    + formater le ::before
-        ```
-        #papiers-mi-J1::before {
-        float: left;
-        width: 50px;
-        margin-left: -50px;
-        text-align: center;
-        }
-        #papiers-mi-J1::before {
-        content: "bla";
-        }
-        ```
-    + prévoir l'ajout d'un `<style>` au début des listes
+    + ~~formater le ::before~~
+    + ~~prévoir l'ajout d'un `<style>` au début des listes~~
+    + prévoir des styles par défaut dans settings.php (4 possibilités)
     + style puces
     + style puces personnalisées pour chaque type
         ```

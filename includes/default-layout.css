@@ -208,6 +208,13 @@ nav#nav-main {
 
 /********** Lists of publications and talks **********************************/
 
+.papers li::before, .talks li::before {
+    float: left;
+    width: 50px;
+    margin-left: -50px;
+    text-align: center;
+}
+
 .papers li {
     margin-bottom: .8em;
 }
