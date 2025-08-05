@@ -208,18 +208,23 @@ nav#nav-main {
 
 /********** Lists of publications and talks **********************************/
 
-.ptlist li::before {
+.ptlist.itemstyle-icons,
+.ptlist.itemstyle-num,
+.ptlist.itemstyle-typenum {
+    list-style-type: none;
+}
+
+.ptlist li .bullet {
     float: left;
     width: 50px;
     margin-left: -50px;
     text-align: center;
 }
 
-.ptlist.itemstyle-icons,
-.ptlist.itemstyle-num,
-.ptlist.itemstyle-typenum {
-    list-style-type: none;
-}
+    .ptlist li .bullet img {
+        width: 18px;
+        margin-top: 5px;
+    }
 
 .plist li {
     margin-bottom: .8em;

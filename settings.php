@@ -153,9 +153,9 @@ $settings['translations']['with'] = array(
  * - 'typenum': items are numbered descreasingly, the number being prefixed
  *   with the 'numprefix' field of the item type given in
  *   $settings['paper types']) or $settings['talk types']) below.
- * Style 'num' and 'typenum' are more adapted to list of publications.
+ * Style 'num' and 'typenum' are only available for lists of publications.
  */
-$settings['paper itemstyle'] = "num";
+$settings['paper itemstyle'] = "icons";
 $settings['talk itemstyle'] = "icons";
 
 
