@@ -154,8 +154,8 @@ $settings['translations']['with'] = array(
  *   $settings['paper types']) or $settings['talk types']) below.
  * Style 'num' and 'typenum' are only available for lists of publications.
  */
-$settings['paper itemstyle'] = "icons";
-$settings['talk itemstyle'] = "icons";
+$settings['paper itemstyle'] = "typenum";
+$settings['talk itemstyle'] = null;
 
 
 /**

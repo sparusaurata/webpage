@@ -169,7 +169,7 @@ function publications(
     }
     
     return get_list(
-        "get_paper", $id, array_merge(["plist"], $class),
+        "get_paper", [$id], array_merge(["plist"], $class),
         function ($key, $item) { return $item['bibid']; },
         $datafile, $data,
         $itemstyle, $settings['paper types'], $oldfirst,
@@ -232,7 +232,7 @@ function talks(
     }
 
     return get_list(
-        "get_talk", $id, array_merge(["tlist"], $class),
+        "get_talk", [$id], array_merge(["tlist"], $class),
         function ($key, $item) { return $key; },
         $datafile, $data,
         $itemstyle, $settings['talk types'], $oldfirst,
@@ -537,14 +537,13 @@ function html_tag (
 
 
 function get_list(
-    $get_item, $id, $class, $idgenerator,
+    $get_item, $idtrace, $class, $idgenerator,
     $datafile = null, $data = null,
     $itemstyle = null, $itemtypes = null, $oldfirst = false,
     $groupby = null, $groups = null, $groupheadtag = "h3",
     $foldable = false, $folded = true, $firstfolded = false
 ) {
     global $settings, $pagedata;
-    $pagedata['bib'][$id] = array();
     $list = "";
     
     if ( $datafile ) {
@@ -566,19 +565,21 @@ function get_list(
             }
         );
 
-        // Prepare the reference of the items if requested by the item style
+        // Prepare the reference of each item
+        $pagedata['bib'][$idtrace[0]] = array();
+        // and add the material requested by the idem style
         if ( $itemstyle == 'num' ) {
             $i = 0;
             foreach ( $data as $item ) {
                 $i += 1;
-                $pagedata['bib'][$id][$item['bibid']]['text'] = $i;
+                $pagedata['bib'][$idtrace[0]][$item['bibid']]['text'] = $i;
             }
         } elseif ( $itemstyle == 'typenum' ) {
             $i = array();
             foreach ( $itemtypes as $key => $type ) { $i[$key] = 0; }
             foreach ( $data as $item ) {
                 $i[$item['type']] += 1;
-                $pagedata['bib'][$id][$item['bibid']]['text'] =
+                $pagedata['bib'][$idtrace[0]][$item['bibid']]['text'] =
                     $itemtypes[$item['type']]['numprefix'] 
                     . $i[$item['type']];
             }
@@ -603,8 +604,8 @@ function get_list(
             $head = translate_if_needed($group['group']);
             $content = get_list(
                 $get_item, 
-                $id . "-" . $groupkey, 
-                array_merge($class, [$id]), 
+                array_merge($idtrace, [$groupkey]), 
+                $class, 
                 $idgenerator,
                 null,
                 array_filter($data, fn($item) => $item[$groupby] == $groupkey),
@@ -638,7 +639,7 @@ function get_list(
         foreach ( $data as $key => $item ) {
             $element = $get_item(
                 $item, 
-                $id . "-" . $idgenerator($key, $item),
+                array_merge($idtrace, [$idgenerator($key, $item)]),
                 $itemstyle
             );
             $listcontent .= $element;
@@ -646,7 +647,8 @@ function get_list(
         if ( $listcontent ) {
             $list .= html_tag(
                 "ul",
-                ["class" => implode(" ", array_merge($class, ["ptlist", $id]))],
+                [ "class" => implode(" ", 
+                    array_merge($class, ["ptlist"])) ],
                 $listcontent
             );
         }
@@ -656,8 +658,11 @@ function get_list(
 }
 
 
-function get_paper( $paper, $id, $itemstyle ) {
+function get_paper( $paper, $idtrace, $itemstyle ) {
     global $settings, $pagedata;
+
+    $id = implode("-", $idtrace);
+    $pagedata ['bib'] [$idtrace[0]] [$paper['bibid']] ['anchor'] = $id;
 
     if ( $itemstyle == 'icons' ) {
         $bullet = html_tag("img", [
@@ -668,6 +673,9 @@ function get_paper( $paper, $id, $itemstyle ) {
             "title" => translate_if_needed( $settings ['paper types'] 
                 [$paper['type']] ['item'] )
         ], $bullet);
+    } elseif ( $itemstyle == 'num' or $itemstyle == 'typenum' ) {
+        $bullet = html_tag("div", ["class" => "bullet"],
+        $pagedata ['bib'] [$idtrace[0]] [$paper['bibid']] ['text']);
     } else {
         $bullet = "";
     }
@@ -765,8 +773,10 @@ function get_paper( $paper, $id, $itemstyle ) {
 }
 
 
-function get_talk( $talk, $id, $itemstyle ) {
+function get_talk( $talk, $idtrace, $itemstyle ) {
     global $settings, $pagedata;
+
+    $id = implode("-", $idtrace);
 
     if ( $itemstyle == 'icons' ) {
         $bullet = html_tag("img", [
