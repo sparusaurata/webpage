@@ -51,6 +51,7 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "",
         'title'         => "",
         'authors'       => [""],
         'type'          => "",
