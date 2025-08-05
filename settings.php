@@ -142,6 +142,24 @@ $settings['translations']['with'] = array(
 
 
 /**
+ * The default style of the items lists publications or talks (it can be
+ * overridden when calling publications() or talks()).
+ * Possible styles are:
+ * - null (default): just normal HTML list items,
+ * - 'icons': the bullet is replaced with an icon indicating the item type,
+ *   as described in the 'icon' field of each type in $settings['paper types'])
+ *   and $settings['talk types']) below,
+ * - 'num': items are numbered decreasingly,
+ * - 'typenum': items are numbered descreasingly, the number being prefixed
+ *   with the 'numprefix' field of the item type given in
+ *   $settings['paper types']) or $settings['talk types']) below.
+ * Style 'num' and 'typenum' are more adapted to list of publications.
+ */
+$settings['paper itemstyle'] = null;
+$settings['talk itemstyle'] = null;
+
+
+/**
  * The different types of publications. This will be used e.g. when the
  * publications are grouped by type (in the given order!).
  * 'item' and 'group' can be either a single string, or an array
@@ -149,7 +167,7 @@ $settings['translations']['with'] = array(
  */
 $settings['paper types'] = array(
     'book' => array(
-        'icon'      => "includes/icons/1f4d8.svg",
+        'icon' => "includes/icons/1f4d8.svg",
         'item'  => array(
             'en' => "Book",
             'fr' => "Livre",
@@ -158,6 +176,7 @@ $settings['paper types'] = array(
             'en' => "Books",
             'fr' => "Livres",
         ),
+        'numprefix' => "B",
     ),
     'journal' => array(
         'icon' => "includes/icons/1f4c4.svg",
@@ -169,6 +188,7 @@ $settings['paper types'] = array(
             'en' => "Journal articles",
             'fr' => "Articles dans une revue",
         ),
+        'numprefix' => "J",
     ),
     'bookchapter' => array(
         'icon' => "includes/icons/1f4d6.svg",
@@ -180,6 +200,7 @@ $settings['paper types'] = array(
             'en' => "Book chapters",
             'fr' => "Chapitres d'ouvrages",
         ),
+        'numprefix' => "C",
     ),
     'proceedings' => array(
         'icon' => "includes/icons/1f4ac.svg",
@@ -191,6 +212,7 @@ $settings['paper types'] = array(
             'en' => "Conference proceedings",
             'fr' => "Actes de conférences",
         ),
+        'numprefix' => "P",
     ),
     'unpublished' => array(
         'icon' => "includes/icons/1f4dd.svg",
@@ -202,6 +224,7 @@ $settings['paper types'] = array(
             'en' => "Unpublished work",
             'fr' => "Travaux non publiés",
         ),
+        'numprefix' => "U",
     ),
     'thesis' => array(
         'icon' => "includes/icons/1f393.svg",
@@ -213,6 +236,7 @@ $settings['paper types'] = array(
             'en' => "Theses",
             'fr' => "Mémoires",
         ),
+        'numprefix' => "T",
     )
 );
 
