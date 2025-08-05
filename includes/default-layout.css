@@ -215,6 +215,12 @@ nav#nav-main {
     text-align: center;
 }
 
+.ptlist.itemstyle-icons,
+.ptlist.itemstyle-num,
+.ptlist.itemstyle-typenum {
+    list-style-type: none;
+}
+
 .plist li {
     margin-bottom: .8em;
 }

@@ -156,9 +156,8 @@ function publications(
 ) {
     global $settings, $pagedata;
 
-    if ( is_null($itemstyle) ) {
-        $itemstyle = $settings['paper itemstyle'];
-    }
+    if ( is_null($itemstyle) ) { $itemstyle = $settings['paper itemstyle']; }
+    if ( !is_null($itemstyle) ) { $class[] = "itemstyle-" . $itemstyle; }
 
     if ( $groupby == 'type' and is_null($groups) ) {
         $groups = $settings['paper types'];
@@ -220,9 +219,8 @@ function talks(
 ) {
     global $settings, $pagedata;
     
-    if ( is_null($itemstyle) ) {
-        $itemstyle = $settings['talk itemstyle'];
-    }
+    if ( is_null($itemstyle) ) { $itemstyle = $settings['talk itemstyle']; }
+    if ( !is_null($itemstyle) ) { $class[] = "itemstyle-" . $itemstyle; }
 
     if ( $groupby == 'type' and is_null($groups) ) {
         $groups = $settings['talk types'];
@@ -234,7 +232,7 @@ function talks(
     }
 
     return get_list(
-        "get_talk", $id, ["tlist"] + $class,
+        "get_talk", $id, array_merge(["tlist"], $class),
         function ($key, $item) { return $key; },
         $datafile, $data,
         $itemstyle, $settings['talk types'], $oldfirst,
