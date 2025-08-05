@@ -242,6 +242,36 @@ function talks(
 }
 
 
+/**
+ * Cites one or several references from a list of publications.
+ * The list must have been generated before the citation: you may have to
+ * do $mylist = publications(...); above, then echo $mylist; below.
+ */
+function cite(
+    // The id that was passed to publications()
+    $listid,
+    // Any number of arguments that may be, either a string (containing the 
+    // bibid of the cited reference), or an array of strings [bibid, text] 
+    // (where the text will be printed as the hyperlink; this is mandatory if 
+    // the itemstyle is not 'num' or 'typenum'). 
+    ...$cited
+) {
+    global $pagedata;
+    $citations = array();
+    foreach ( $cited as $item ) {
+        if ( is_string($item) ) {
+            $anchor = $pagedata['bib'][$listid][$item]['anchor'];
+            $text = $pagedata['bib'][$listid][$item]['text'];
+        } elseif ( is_array($item) ) {
+            $anchor = $pagedata['bib'][$listid][$item[0]]['anchor'];
+            $text = $item[1];
+        }
+        $citations[] = html_tag("a", ["href" => "#$anchor"], $text);
+    }
+    echo html_tag("span", ["class" => "citation"], implode(", ", $citations));
+}
+
+
 ////////// HTML <HEAD> ////////////////////////////////////////////////////////
 
 
