@@ -226,6 +226,23 @@ nav#nav-main {
         margin-top: 5px;
     }
 
+    .ptlist.itemstyle-num .bullet::before,
+    .ptlist.itemstyle-typenum .bullet::before { 
+        content: "["; 
+    }
+    .ptlist.itemstyle-num .bullet::after,
+    .ptlist.itemstyle-typenum .bullet::after { 
+        content: "]";
+        margin-right: 5px; 
+    }
+
+    li.type-book        .bullet { color: #f8c91f; }
+    li.type-journal     .bullet { color: #c71a6b; }
+    li.type-bookchapter .bullet { color: #e47b04; }
+    li.type-proceedings .bullet { color: #1767d6; }
+    li.type-thesis      .bullet { color: #f8c91f; }
+    li.type-unpublished .bullet { color: #888; }
+
 .plist li {
     margin-bottom: .8em;
 }
