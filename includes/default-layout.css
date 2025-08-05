@@ -278,3 +278,6 @@ nav#nav-main {
 .t-links a:after {
     content: "]";
 }
+
+.citation::before { content: "["; }
+.citation::after { content: "]"; }
