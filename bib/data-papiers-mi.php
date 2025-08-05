@@ -81,8 +81,7 @@ $data = [
             "The lazy evaluation of the λ-calculus enjoys linear approximation, and that’s all",
         'authors'       => ["R.C."],
         'type'          => "unpublished",
-        'status'        => "submitted",
-        'date'          => "2025-05-28",
+        'date'          => "2025-07-19",
         // Optional parameters (can be removed)
         'info'          => array(
             'en' => "Abstract submitted to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>). Long version to be submitted soon...",
@@ -110,8 +109,7 @@ $data = [
             "Compression for Coinductive Infinitary Rewriting (A Preliminary Account)",
         'authors'       => ["R.C.", "Alexis Saurin"],
         'type'          => "unpublished",
-        'status'        => "submitted",
-        'date'          => "2025-05-21",
+        'date'          => "2025-07-14",
         // Optional parameters (can be removed)
         'info'          => array(
             'en' => "Abstract submitted to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
@@ -139,7 +137,6 @@ $data = [
             No variable gets left behind or forgotten!",
         'authors'       => ["R.C.", "G.&nbsp;Manzonetto", "A.&nbsp;Saurin"],
         'type'          => "proceedings",
-        'status'        => "",
         'date'          => "2025-07-07",
         // Optional parameters (can be removed)
         'info'          => 
@@ -165,7 +162,6 @@ $data = [
         'title'         => "Taylor Approximation and Infinitary λ-Calculi",
         'authors'       => ["R.C."],
         'type'          => "thesis",
-        'status'        => null,
         'date'          => "2024-06-10",
         'info'          => array(
             'fr' => "Thèse de doctorat.
@@ -237,7 +233,6 @@ $data = [
             linear approximation of the λ-calculus",
         'authors'       => ["R.C.", "L.&nbsp;Vaux&nbsp;Auclair"],
         'type'          => "proceedings",
-        'status'        => null,
         'date'          => "2025-02-24",
         'info'          => 
             "<i>42nd International Symposium on Theoretical Aspects of Computer Science (STACS 2025)</i>, LIPIcs vol.&nbsp;327.",
@@ -258,7 +253,6 @@ $data = [
             via Taylor Expansion, and Applications",
         'authors'       => ["R.C.", "L.&nbsp;Vaux&nbsp;Auclair"],
         'type'          => "journal",
-        'status'        => null,
         'date'          => "2023-12-20",
         'info'          =>
             "<i>Logical Methods in Computer Science</i>,
