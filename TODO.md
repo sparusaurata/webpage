@@ -6,12 +6,7 @@
 - Plusieurs styles de listes
     + ~~supprimer les puces existantes et commenter les styles~~
     + ~~prévoir des styles par défaut dans settings.php (4 possibilités)~~
-    + indiquer le style de puces dans une classe
-        ```
-        .papers, .talks {
-            list-style-type: none;
-        }
-        ```
+    + ~~indiquer le style de puces dans une classe~~
     + ajouter un `<div>` pour les puces, remplir et faire le style pour :
     + ~~style puces (rien à faire)~~
     + style puces personnalisées pour chaque type
