@@ -13,6 +13,24 @@ start_content(
     menufile: "menu.php"
 );
 
+// Let's first generate my lists
+$papiers_mi = publications(
+    id: "papiers-mi",
+    datafile: "bib/data-papiers-mi.php",
+    class: ["spaceabove"],
+);
+$papiers_shs = publications(
+    id: "papiers-shs",
+    datafile: "bib/data-papiers-shs.php",
+    class: ["spaceabove"],
+);
+$exposes = talks(
+    id: "exposes",
+    datafile: "bib/data-exposes.php",
+    groupby: "date",
+    foldable: true,
+);
+
 ?>
 
 <h1 lang="fr">Recherche</h1>
@@ -110,11 +128,7 @@ start_content(
     <a href="https://arxiv.org/a/cerda_r_1" target="_blank">arXiv</a>.
 </p>
 
-<?php echo publications(
-    id: "papiers-mi",
-    datafile: "bib/data-papiers-mi.php",
-    class: ["spaceabove"],
-); ?>
+<?php echo $papiers_mi; ?>
 
 <!-----------------------------------> 
 
@@ -123,12 +137,7 @@ start_content(
 <span lang="en">Talks</span>
 </h2>
 
-<?php echo talks(
-    id: "exposes",
-    datafile: "bib/data-exposes.php",
-    groupby: "date",
-    foldable: true,
-); ?>
+<?php echo $exposes; ?>
 
 <!-----------------------------------> 
 
@@ -165,11 +174,7 @@ start_content(
     Here is a list of my written work in this domain.
 </p>
 
-<?php echo publications(
-    id: "papiers-shs",
-    datafile: "bib/data-papiers-shs.php",
-    class: ["spaceabove"],
-); ?>
+<?php echo $papiers_shs; ?>
 
 <p lang="fr" class="spaceabove">
     Je termine aussi une formation de droit. La recherche associant droit et informatique semble ouvrir de nombreuses perspectives&nbsp;: j'adorerais m'impliquer dans ce genre de travaux, n'hésitez pas à me contacter à ce sujet&nbsp;!
