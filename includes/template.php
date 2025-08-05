@@ -12,7 +12,7 @@
 
 
 /* Set to true to show more error messages. */
-$debugging = true;
+$debugging = false;
 if ( $debugging ) {
     /* Uncomment the following line if you're trying to find the server root. */
     //echo "The current directory is " . getenv("PWD") . ".";
