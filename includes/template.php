@@ -571,14 +571,14 @@ function get_list(
             $i = 0;
             foreach ( $data as $item ) {
                 $i += 1;
-                $pagedata['bib'][$id][$item['bibid']] = $i;
+                $pagedata['bib'][$id][$item['bibid']]['text'] = $i;
             }
         } elseif ( $itemstyle == 'typenum' ) {
             $i = array();
             foreach ( $itemtypes as $key => $type ) { $i[$key] = 0; }
             foreach ( $data as $item ) {
                 $i[$item['type']] += 1;
-                $pagedata['bib'][$id][$item['bibid']] =
+                $pagedata['bib'][$id][$item['bibid']]['text'] =
                     $itemtypes[$item['type']]['numprefix'] 
                     . $i[$item['type']];
             }
@@ -638,7 +638,8 @@ function get_list(
         foreach ( $data as $key => $item ) {
             $element = $get_item(
                 $item, 
-                $id . "-" . $idgenerator($key, $item)
+                $id . "-" . $idgenerator($key, $item),
+                $itemstyle
             );
             $listcontent .= $element;
         }
@@ -655,8 +656,21 @@ function get_list(
 }
 
 
-function get_paper( $paper, $id ) {
+function get_paper( $paper, $id, $itemstyle ) {
     global $settings, $pagedata;
+
+    if ( $itemstyle == 'icons' ) {
+        $bullet = html_tag("img", [
+            "src" =>  $settings ['paper types'] [$paper['type']] ['icon']
+        ]);
+        $bullet = html_tag("div", [
+            "class" => "bullet",
+            "title" => translate_if_needed( $settings ['paper types'] 
+                [$paper['type']] ['item'] )
+        ], $bullet);
+    } else {
+        $bullet = "";
+    }
 
     $title =  html_tag("span", ["class" => "p-title"], $paper['title']);
 
@@ -746,13 +760,26 @@ function get_paper( $paper, $id ) {
 
     return html_tag("li", 
         ["id" => $id, "class" => "type-" . $paper['type']],
-        $head . $details . $links . $abstract
+        $bullet . $head . $details . $links . $abstract
     );
 }
 
 
-function get_talk( $talk, $id ) {
+function get_talk( $talk, $id, $itemstyle ) {
     global $settings, $pagedata;
+
+    if ( $itemstyle == 'icons' ) {
+        $bullet = html_tag("img", [
+            "src" =>  $settings ['talk types'] [$talk['type']] ['icon']
+        ]);
+        $bullet = html_tag("div", [
+            "class" => "bullet",
+            "title" => translate_if_needed( $settings ['talk types'] 
+                [$talk['type']] ['item'] )
+        ], $bullet);
+    } else {
+        $bullet = "";
+    }
 
     $title =  html_tag("span", ["class" => "t-title"], $talk['title']);
 
@@ -793,7 +820,7 @@ function get_talk( $talk, $id ) {
 
     return html_tag("li", 
         ["id" => $id, "class" => "type-" . $talk['type']], 
-        $title . $details . $links
+        $bullet . $title . $details . $links
     );
 }
 
