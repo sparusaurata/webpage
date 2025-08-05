@@ -5,16 +5,16 @@
 - ~~Distinguer la génération des listes de leur affichage~~
 - Plusieurs styles de listes
     + ~~supprimer les puces existantes et commenter les styles~~
-    + ~~formater le ::before~~
-    + ~~prévoir l'ajout d'un `<style>` au début des listes~~
-    + prévoir des styles par défaut dans settings.php (4 possibilités)
-    + style puces
-    + style puces personnalisées pour chaque type
+    + ~~prévoir des styles par défaut dans settings.php (4 possibilités)~~
+    + indiquer le style de puces dans une classe
         ```
         .papers, .talks {
             list-style-type: none;
         }
         ```
+    + ajouter un `<div>` pour les puces, remplir et faire le style pour :
+    + ~~style puces (rien à faire)~~
+    + style puces personnalisées pour chaque type
     + style numéro global
     + style numéro par type avec préfixe
         ```
@@ -25,7 +25,7 @@
         .p-bibid.thesis { color: #f8c91f; }
         .p-bibid.unpublished { color: #888; }
         ```
-- Retourner la correspondance bibid -> texte avec les listes de publications
+- ~~Retourner la correspondance bibid -> texte avec les listes de publications~~
 - Créer une fonction de citation des références
 - Réfléchir à ce qui se passe si on cite une référence dans une référence
     + option 1 : on fait des liens à la main

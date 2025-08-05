@@ -144,7 +144,7 @@ $settings['translations']['with'] = array(
  * The default style of the items lists publications or talks (it can be
  * overridden when calling publications() or talks()).
  * Possible styles are:
- * - null (default): just normal HTML list items,
+ * - 'plain' (default): just normal HTML list items,
  * - 'icons': the bullet is replaced with an icon indicating the item type,
  *   as described in the 'icon' field of each type in $settings['paper types'])
  *   and $settings['talk types']) below,
@@ -154,8 +154,8 @@ $settings['translations']['with'] = array(
  *   $settings['paper types']) or $settings['talk types']) below.
  * Style 'num' and 'typenum' are more adapted to list of publications.
  */
-$settings['paper itemstyle'] = null;
-$settings['talk itemstyle'] = null;
+$settings['paper itemstyle'] = "num";
+$settings['talk itemstyle'] = "icons";
 
 
 /**
