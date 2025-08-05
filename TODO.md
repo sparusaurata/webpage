@@ -13,3 +13,14 @@
 # Automatiser l'affichage des news
 
 # Décrire le workflow pour les prochaines modifications
+
+- Mettre à jour settings.php dans la branche my pour que le site fonctionne en local (voir dans la branche dev)
+- Modifier dans dev (facile) ou, plutôt dans my (pratique)
+- Si des modifications de structures sont faites dans my :
+    + gsta
+    + gco dev
+    + gstp
+    + gcam
+    + gco my
+    + gm dev
+- Remettre settings.php à sa valeur de départ !
