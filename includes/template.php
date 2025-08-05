@@ -90,6 +90,7 @@ function start_content (
                 }
             }
         }
+        $pagedata['bib'] = array();
 
         // Print the header.
         require($settings['server root'] . "includes/header.php");
@@ -130,8 +131,10 @@ function publications(
     // (see bib/data-papers-example.php for formatting details)
     $datafile = null,
     $data = null,
+    // The style of each item's bullet (see $settings['paper itemstyle'])
+    $itemstyle = null, 
     // Whether the chronological order should be ascending or not
-    $oldfirst = false, 
+    $oldfirst = false,
     // Whether the publications should be printed in separate groups.
     // Possible values: null (no grouping), 'date' (grouping by year), 'type' 
     // (grouping by publication types as defined in $settings ['paper types']).
@@ -153,6 +156,10 @@ function publications(
 ) {
     global $settings, $pagedata;
 
+    if ( is_null($itemstyle) ) {
+        $itemstyle = $settings['paper itemstyle'];
+    }
+
     if ( $groupby == 'type' and is_null($groups) ) {
         $groups = $settings['paper types'];
     }
@@ -163,11 +170,12 @@ function publications(
     }
     
     return get_list(
-        "get_paper", $id, array_merge(["papers"], $class),
+        "get_paper", $id, array_merge(["plist"], $class),
         function ($key, $item) { return $item['bibid']; },
-        $datafile, $data, $oldfirst,
+        $datafile, $data,
+        $itemstyle, $settings['paper types'], $oldfirst,
         $groupby, $groups, $groupheadtag,
-        $foldable, $folded, $firstfolded,
+        $foldable, $folded, $firstfolded
     );
 }
 
@@ -187,8 +195,10 @@ function talks(
     // (see bib/data-talks-example.php for formatting details)
     $datafile = null, 
     $data = null, 
+    // The style of each item's bullet (see $settings['talk itemstyle'])
+    $itemstyle = null, 
     // Whether the chronological order should be ascending or not
-    $oldfirst = false, 
+    $oldfirst = false,
     // Whether the talks should be printed in separate groups.
     // Possible values: null (no grouping), 'date' (grouping by year), 'type' 
     // (grouping by talk types as defined in $settings ['talk types']).
@@ -210,6 +220,10 @@ function talks(
 ) {
     global $settings, $pagedata;
     
+    if ( is_null($itemstyle) ) {
+        $itemstyle = $settings['talk itemstyle'];
+    }
+
     if ( $groupby == 'type' and is_null($groups) ) {
         $groups = $settings['talk types'];
     }
@@ -220,9 +234,10 @@ function talks(
     }
 
     return get_list(
-        "get_talk", $id, ["talks"] + $class,
+        "get_talk", $id, ["tlist"] + $class,
         function ($key, $item) { return $key; },
-        $datafile, $data, $oldfirst,
+        $datafile, $data,
+        $itemstyle, $settings['talk types'], $oldfirst,
         $groupby, $groups, $groupheadtag,
         $foldable, $folded, $firstfolded
     );
@@ -525,12 +540,14 @@ function html_tag (
 
 function get_list(
     $get_item, $id, $class, $idgenerator,
-    $datafile = null, $data = null, $oldfirst = false,
+    $datafile = null, $data = null,
+    $itemstyle = null, $itemtypes = null, $oldfirst = false,
     $groupby = null, $groups = null, $groupheadtag = "h3",
     $foldable = false, $folded = true, $firstfolded = false
 ) {
     global $settings, $pagedata;
-    $style = ""; $list = "";
+    $pagedata['bib'][$id] = array();
+    $list = "";
     
     if ( $datafile ) {
         include($datafile);
@@ -538,7 +555,40 @@ function get_list(
         throw new InvalidArgumentException("Function publications():
         one of the arguments \$datafile and \$data should be non-empty.");
     }
-    usort($data, usorter_by_date($oldfirst));
+
+    // Some prework to be done only once (not in each group)
+    $caller = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2)[1]['function'];
+    if ( $caller != "get_list" ) {
+
+        // Sort the data from newest to oldest
+        usort($data, function($a, $b) {
+            $adate = new DateTime($a['date']);
+            $bdate = new DateTime($b['date']);
+            if ( $adate > $bdate ) { return 1; } else { return -1; };
+            }
+        );
+
+        // Prepare the reference of the items if requested by the item style
+        if ( $itemstyle == 'num' ) {
+            $i = 0;
+            foreach ( $data as $item ) {
+                $i += 1;
+                $pagedata['bib'][$id][$item['bibid']] = $i;
+            }
+        } elseif ( $itemstyle == 'typenum' ) {
+            $i = array();
+            foreach ( $itemtypes as $key => $type ) { $i[$key] = 0; }
+            foreach ( $data as $item ) {
+                $i[$item['type']] += 1;
+                $pagedata['bib'][$id][$item['bibid']] =
+                    $itemtypes[$item['type']]['numprefix'] 
+                    . $i[$item['type']];
+            }
+        }
+
+        // If $oldfirst revert the order
+        if ( !$oldfirst ) { $data = array_reverse($data); }
+    }
 
     if ( $groupby ) {
         if ( $groupby == 'date' ) {
@@ -554,12 +604,13 @@ function get_list(
         foreach ( $groups as $groupkey => $group ) {
             $head = translate_if_needed($group['group']);
             $content = get_list(
-                $get_item,
-                $id . "-" . $groupkey,
-                $class, 
+                $get_item, 
+                $id . "-" . $groupkey, 
+                array_merge($class, [$id]), 
                 $idgenerator,
-                null, 
-                array_filter($data, fn($item) => $item[$groupby] == $groupkey)
+                null,
+                array_filter($data, fn($item) => $item[$groupby] == $groupkey),
+                $itemstyle
             );
             if ( $content ) {
                 if ( $foldable ) {
@@ -591,37 +642,18 @@ function get_list(
                 $item, 
                 $id . "-" . $idgenerator($key, $item)
             );
-            $listcontent .= $element['li'];
-            $style .= $element['style'];
+            $listcontent .= $element;
         }
         if ( $listcontent ) {
             $list .= html_tag(
                 "ul",
-                ["class" => implode(" ", $class + ["ptlist"])],
+                ["class" => implode(" ", array_merge($class, ["ptlist", $id]))],
                 $listcontent
             );
         }
     }
 
-    if ( $style ) {
-        $style = "<style>" . $style . "</style";
-    }
-
-    return $style . $list;
-}
-
-
-function usorter_by_date( $reversed = true ) {
-    return function($a, $b) use($reversed) {
-        $adate = new DateTime($a['date']);
-        $bdate = new DateTime($b['date']);
-        $difference = date_diff($bdate, $adate);
-        if ( $reversed ) {
-            return $difference->days * $difference->invert * (-1);
-        } else {
-            return $difference->days * $difference->invert;
-        }
-    };
+    return $list;
 }
 
 
@@ -714,12 +746,9 @@ function get_paper( $paper, $id ) {
         $abstract = "";
     }
 
-    return array(
-        'li' => html_tag("li", 
-                ["id" => $id],
-                $head . $details . $links . $abstract
-            ),
-        'style' => ""
+    return html_tag("li", 
+        ["id" => $id, "class" => "type-" . $paper['type']],
+        $head . $details . $links . $abstract
     );
 }
 
@@ -764,12 +793,9 @@ function get_talk( $talk, $id ) {
         $links = html_tag("span", ["class" => "t-links"], $links);
     }
 
-    return array(
-        'li' => html_tag("li", 
-                ["id" => $id], 
-                $title . $details . $links
-            ),
-        'style' => ""
+    return html_tag("li", 
+        ["id" => $id, "class" => "type-" . $talk['type']], 
+        $title . $details . $links
     );
 }
 
