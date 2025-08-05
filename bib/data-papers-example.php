@@ -49,6 +49,7 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "example",
         'title'         => "An example paper",
         'authors'       => ["Author One", "Author Two", "Ignored"],
         'type'          => "journal",
@@ -75,6 +76,7 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "other",
         'title'         => "Another paper",
         'authors'       => ["Ignored"],
         'type'          => "proceedings",
@@ -86,6 +88,7 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "",
         'title'         => "",
         'authors'       => [""],
         'type'          => "",
