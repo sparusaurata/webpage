@@ -84,8 +84,8 @@ $data = [
         'date'          => "2025-07-19",
         // Optional parameters (can be removed)
         'info'          => array(
-            'en' => "Abstract submitted to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>). Long version to be submitted soon...",
-            'fr' => "Résumé soumis au 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>). Version longue à venir...",
+            'en' => "Abstract presented to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>).",
+            'fr' => "Résumé présenté au 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>).",
         ),
         'abstract'      =>
             "<p>
@@ -112,8 +112,8 @@ $data = [
         'date'          => "2025-07-14",
         // Optional parameters (can be removed)
         'info'          => array(
-            'en' => "Abstract submitted to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
-            'fr' => "Résumé soumis au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
+            'en' => "Abstract presented to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
+            'fr' => "Résumé présenté au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
         ),
         'abstract'      =>
             "<p>
