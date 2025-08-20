@@ -84,8 +84,8 @@ $data = [
         'date'          => "2025-07-19",
         // Optional parameters (can be removed)
         'info'          => array(
-            'en' => "Abstract presented to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>).",
-            'fr' => "Résumé présenté au 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA 2025</a>).",
+            'en' => "Abstract presented to the 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA&nbsp;2025</a>).",
+            'fr' => "Résumé présenté au 9th International Workshop on Trends in Linear Logic and Interactions (<a href=\"https://lipn.univ-paris13.fr/TLLA/2025/\" target=\"_blank\">TLLA&nbsp;2025</a>).",
         ),
         'abstract'      =>
             "<p>
@@ -112,8 +112,8 @@ $data = [
         'date'          => "2025-07-14",
         // Optional parameters (can be removed)
         'info'          => array(
-            'en' => "Abstract presented to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
-            'fr' => "Résumé présenté au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR 2025</a>).",
+            'en' => "Abstract presented to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).",
+            'fr' => "Résumé présenté au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).",
         ),
         'abstract'      =>
             "<p>
@@ -140,7 +140,7 @@ $data = [
         'date'          => "2025-07-07",
         // Optional parameters (can be removed)
         'info'          => 
-            "<i>10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)</i>, LIPIcs vol.&nbsp;337.",
+            "<i>10th International Conference on Formal Structures for Computation and Deduction (FSCD&nbsp;2025)</i>, LIPIcs vol.&nbsp;337.",
         'abstract'      =>
             "<p>
             Although the λI-calculus is a natural fragment of the λ-calculus, obtained by forbidding the erasure, its equational theories did not receive much attention. The reason is that all proper denotational models studied in the literature equate all non-normalizable λI-terms, whence the associated theory is not very informative. The goal of this paper is to introduce a previously unknown theory of the λI-calculus, induced by a notion of evaluation trees that we call ‘Ohana trees’. The Ohana tree of a λI-term is an annotated version of its Böhm tree, remembering all free variables that are hidden within its meaningless subtrees, or pushed into infinity along its infinite branches.
@@ -202,11 +202,11 @@ $data = [
         'info'          => array(
             'en' => "To appear in the proceedings of
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS 2024</a>.
+                target=\"_blank\">FICS&nbsp;2024</a>.
                 See Chapter&nbsp;1 of my thesis for a longer version.",
             'fr' => "À paraître dans les actes de
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS 2024</a>.
+                target=\"_blank\">FICS&nbsp;2024</a>.
                 Version plus détaillée dans le chapitre&nbsp;1 de ma thèse.",
         ),
         'abstract'      => 
