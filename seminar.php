@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.9;">
 
     <style>
+        body { max-width: 1400px; }
         div.talk { margin-bottom: 15px; }
         details.abstract { font-size: 80%; margin-top: 5px; }
         details.abstract summary { font-variant: small-caps; }
@@ -60,9 +61,11 @@
         'SPEAKER'       => 
             "<a href='https://www.i2m.univ-amu.fr/perso/remy.cerda/' target='_blank'>Rémy Cerda</a>",
         'AFFILIATION'   => "Unibo",
-        'TITLE'         => NULL,
+        'TITLE'         =>
+            "Infinitary rewriting and the linear approximation of functional programs",
         'LOCATION'      => "aula Busi",
-        'ABSTRACT'      => NULL
+        'ABSTRACT'      =>
+            "A standard technique in λ-calculus is <i>continuous</i> program approximation, where the semantics of a program is described as a limit of finite approximants. It can be refined into a <i>linear</i> approximation where an operation of Taylor expansion takes a program to a power series of finite approximants. In this talk, I rebuild this longstanding line of work using what can arguably be presented as the “missing ingredient”, infinitary rewriting. Depending on the time remaining and the wishes of the audience, I will show a few other interesting results or questions around the lines of an infinitary Curry-Howard correspondence."
     ),
     array(
         'DATETIME'      => "2026-01-21 11:00",
