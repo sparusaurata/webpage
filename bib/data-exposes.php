@@ -69,7 +69,7 @@ $data = [
         'info'          => "",
         'pdf'           => "./fichiers/exposes/simulation-iwc.pdf",
         'video'         => null,
-        'slides'        => null,
+        'slides'        => "./fichiers/exposes/simulation-iwc-slides.pdf",
     ),
 
     array(

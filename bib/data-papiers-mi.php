@@ -76,6 +76,61 @@ $data = [
 
     array(
         // Mandatory parameters
+        'bibid'         => "J2",
+        'title'         => "How to play the Accordion.
+            Uniformity and the (non-)conservativity of the
+            linear approximation of the λ-calculus",
+        'authors'       => ["R.C.", "Lionel Vaux Auclair"],
+        'type'          => "journal",
+        'status'        => "submitted",
+        'date'          => "2025-11-24",
+        // Optional parameters (can be removed)
+        'info'          =>
+            "Extended and improved version of [<a href=\"#papiers-mi-P2\">P1</a>].",
+        'abstract'      =>
+            "<p>
+            Twenty years after its introduction by Ehrhard and Regnier, differentiation in λ-calculus and in linear logic is now a celebrated tool. In particular, it allows to establish a Taylor expansion formula for various λ-calculi, hence providing a theory of linear approximations for these calculi. In the pure λ-calculus,  the linear approximants of λ-terms supporting this Taylor expansion are the terms of a so-called resource calculus, which is equipped with a finitary (strongly normalising) reduction; and the efficiency of this linear approximation is expressed by results stating that the (possibly) infinitary β-reduction of λ-terms is simulated by the reduction of their Taylor expansions, which is induced by the iterated reduction of resource terms. In terms of rewriting systems, resource reduction (operating on infinite linear combinations of Taylor approximants) is an extension of β-reduction.
+            </p><p>
+            In this article, we address the converse property, conservativity: do all reductions between Taylor expansions arise from actual β-reductions? We show that if we restrict the setting to finite terms and β-reduction sequences, then the linear approximation is conservative. However, as soon as one allows infinitary reduction sequences this property is broken. We design a counter-example, the Accordion. Then we show how restricting the reduction of the Taylor approximants allows to build a conservative extension of the β-reduction preserving good simulation properties; this restriction relies on uniformity, a property that was already at the core of Ehrhard and Regnier's pioneering work. Finally, we extend our work to β\(\bot\)-reductions, which play a key role in λ-calculus as they relate a λ-term to its Böhm tree.
+            </p>",
+        'pdf'           => "./fichiers/papiers/conservativity-lmcs.pdf",
+        'arxiv'         => null,
+        'hal'           => null,
+        'code'          => null,
+        'video'         => null,
+        'url'           => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
+        'bibid'         => "P4",
+        'title'         =>
+            "Compression for Coinductive Infinitary Rewriting: A Generic Approach, with Applications to Cut-Elimination for Non-Wellfounded Proofs",
+        'authors'       => ["R.C.", "Alexis Saurin"],
+        'type'          => "proceedings",
+        'status'        => "submitted",
+        'date'          => "2025-10-09",
+        // Optional parameters (can be removed)
+        'abstract'      =>
+            "<p>
+            Infinitary rewriting, i.e. rewriting featuring possibly infinite terms and sequences of reduction, is a convenient framework for describing the dynamics of non-terminating but productive rewriting systems. In its original definition based on metric convergence of ordinal-indexed sequences of rewriting steps, a highly desirable property of an infinitary rewriting system is Compression, i.e. the fact that rewriting sequences of arbitrary ordinal length can always be ‘compressed’ to equivalent sequences of length at most ω.
+            </p><p>
+            Since then, the standard examples of infinitary rewriting systems have been given another equivalent presentation based on coinduction. In this work, we extend this presentation to the rewriting of arbitrary non-wellfounded derivations and we investigate compression in this setting. We design a generic proof of compression, relying on a characterisation factorising most of the proof and identifying the key property a compressible infinitary rewriting system should enjoy.
+            </p><p>
+            As running examples, we discuss first-order rewriting and infinitary λ-calculi. For the latter, compression can in particular be seen as a justification of its coinductive presentation in the literature. As a more advanced example, we also address compression of cut-elimination sequences in the non-wellfounded proof system μMALL∞ for multiplicative-additive linear logics with fixed points, which is a key lemma of several cut-elimination results for similar proof systems.
+            </p>",
+        'pdf'           => "./fichiers/papiers/compression.pdf",
+        'arxiv'         => "2510.08420",
+        'hal'           => null,
+        'code'          => null,
+        'video'         => null,
+        'url'           => null,
+        'slides'        => null,
+    ),
+
+    array(
+        // Mandatory parameters
         'bibid'         => "U2",
         'title'         => 
             "The lazy evaluation of the λ-calculus enjoys linear approximation, and that’s all",
@@ -94,6 +149,7 @@ $data = [
             This shows that a second normal form model enjoys a linear approximation, out of the \(2^c\) existing normal form models (where \(c\) is the cardinality of the continuum). We conclude by noticing that there cannot be such a linear approximation for all other such models, and in particular for Berarducci trees.
             </p>",
         'pdf'           => "./fichiers/papiers/lazy-taylor-tlla.pdf",
+        'html'          => "https://drops.dagstuhl.de/storage/00lipics/lipics-vol337-fscd2025/html/LIPIcs.FSCD.2025.12/LIPIcs.FSCD.2025.12.html",
         'arxiv'         => null,
         'hal'           => null,
         'code'          => null,
@@ -112,8 +168,10 @@ $data = [
         'date'          => "2025-07-14",
         // Optional parameters (can be removed)
         'info'          => array(
-            'en' => "Abstract presented to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).",
-            'fr' => "Résumé présenté au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).",
+            'en' => "Abstract presented to the 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).
+            <b>Read the real paper [<a href=\"#papiers-mi-P4\">P3</a>] instead.</b>",
+            'fr' => "Résumé présenté au 12th International Workshop on Higher-Order Rewriting (<a href=\"https://hor2025.github.io/\" target=\"_blank\">HOR&nbsp;2025</a>).
+            <b>Lire plutôt le vrai article [<a href=\"#papiers-mi-P4\">P3</a>].</b>",
         ),
         'abstract'      =>
             "<p>
@@ -197,16 +255,17 @@ $data = [
             target=\"_blank\">[KPSdV'13]</a>",
         'authors'       => ["R.C."],
         'type'          => "proceedings",
-        'status'        => "accepted",
-        'date'          => "2024-04-19",
+        'date'          => "2025-11-04",
         'info'          => array(
-            'en' => "To appear in the proceedings of
+            'en' => "Proceedings of
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS&nbsp;2024</a>.
+                target=\"_blank\">FICS&nbsp;2024</a>,
+                <a href=\"https://eptcs.org/content.cgi?FICS2024\" target=\"_blank\">EPTCS&nbsp;435</a>.
                 See Chapter&nbsp;1 of my thesis for a longer version.",
-            'fr' => "À paraître dans les actes de
+            'fr' => "Actes de
                 <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS&nbsp;2024</a>.
+                target=\"_blank\">FICS&nbsp;2024</a>,
+                <a href=\"https://eptcs.org/content.cgi?FICS2024\" target=\"_blank\">EPTCS&nbsp;435</a>.
                 Version plus détaillée dans le chapitre&nbsp;1 de ma thèse.",
         ),
         'abstract'      => 
@@ -224,6 +283,8 @@ $data = [
             </p>",
         'pdf'           => "fichiers/papiers/nominal-nu-mu-fics.pdf",
         'long'          => "fichiers/papiers/nominal-nu-mu.pdf",
+        'doi'           => "10.4204/EPTCS.435.5",
+        'arxiv'         => "2511.02595",
     ),
 
     array(
@@ -235,7 +296,8 @@ $data = [
         'type'          => "proceedings",
         'date'          => "2025-02-24",
         'info'          => 
-            "<i>42nd International Symposium on Theoretical Aspects of Computer Science (STACS 2025)</i>, LIPIcs vol.&nbsp;327.",
+            "<i>42nd International Symposium on Theoretical Aspects of Computer Science (STACS 2025)</i>, LIPIcs vol.&nbsp;327.
+            <b>Read the extended version [<a href=\"#papiers-mi-J2\">J2</a>] instead.</b>",
         'abstract'      =>
             "<p>
             Twenty years after its introduction by Ehrhard and Regnier, differentiation in λ-calculus and in linear logic is now

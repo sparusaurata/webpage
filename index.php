@@ -18,23 +18,19 @@ start_content(
 ?>
 
 <p lang="fr">
-<img class="me" src="fichiers/rc.jpg">
-    Je suis post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, à Paris.
-    Je travaille au sein du projet <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> conduit par <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
+    <img class="me" src="fichiers/rc.jpg">
+    Je suis actuellement post-doc à l'<a href="https://disi.unibo.it/" target="_blank">Università di Bologna</a>, où je travaille avec <a href="https://udallago.github.io/" target="_blank">Ugo Dal Lago</a>.
 </p>
 <p lang="en">
     <img class="me" src="fichiers/rc.jpg">
-    I'm a post-doctoral researcher at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in Paris.
-    I'm working in the project <a href="https://www.irif.fr/reciprog/index" target="_blank" title="REasoning on CIrcular proofs for PROGramming">RECIPROG</a> led by <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
+    I'm currently a post-doctoral researcher at <a href="https://disi.unibo.it/" target="_blank">Università di Bologna</a>, where I'm working with <a href="https://udallago.github.io/" target="_blank">Ugo Dal Lago</a>.
 </p>
 
 <p lang="fr">
-    Précédemment, j'étais doctorant en mathématiques à l'<a href="https://www.univ-amu.fr/" target="_blank">université d'Aix-Marseille</a>, au sein de l'équipe <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logique de la programmation</a> de l'<a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>. 
-    Mes directeurs de thèse étaient <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a> et <a href="https://www.i2m.univ-amu.fr/perso/laurent.regnier/" target="_blank">Laurent Regnier</a>.
+    Précédemment, j'étais doctorant en mathématiques à l'<a href="https://www.univ-amu.fr/" target="_blank">université d'Aix-Marseille</a>, au sein de l'équipe <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logique de la programmation</a> de l'<a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>,  encadré par <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a> et <a href="https://www.i2m.univ-amu.fr/perso/laurent.regnier/" target="_blank">Laurent Regnier</a>&nbsp;; puis post-doc à l'<a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, à Paris, avec <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
 </p>
 <p lang="en">
-    Previously, I was a PhD student in Mathematics at <a href="https://www.univ-amu.fr/" target="_blank">Aix-Marseille University</a>, in the <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logics of Programming</a> team of <a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>. 
-    My supervisors were <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a> and <a href="https://www.i2m.univ-amu.fr/perso/laurent.regnier/" target="_blank">Laurent Regnier</a>. 
+    Previously, I was a PhD student in Mathematics at <a href="https://www.univ-amu.fr/" target="_blank">Aix-Marseille University</a>, in the <a href="https://www.i2m.univ-amu.fr/equipes-scientifiques/groupe-arithmetique-geometrie-logique-et-representations-aglr/equipe-logique-de-la-programmation-ldp/" target="_blank">Logics of Programming</a> team of <a href="https://www.i2m.univ-amu.fr/" target="_blank" title="Institut de mathématiques de Marseille">I2M</a>, supervised by <a href="https://www.i2m.univ-amu.fr/perso/lionel.vaux/" target="_blank">Lionel Vaux Auclair</a> and <a href="https://www.i2m.univ-amu.fr/perso/laurent.regnier/" target="_blank">Laurent Regnier</a>; and then a postdoc at <a href="https://www.irif.fr/index" target="_blank" title="Institut de recherche en informatique fondamentale">IRIF</a>, in Paris, with <a href="https://www.irif.fr/users/saurin/index" target="_blank">Alexis Saurin</a>.
 </p>
 
 <p lang="fr">
@@ -58,6 +54,14 @@ start_content(
 </summary>
 
 <dl>
+    <dt>Nov. 2025</dt>
+    <dd lang="fr">
+        Le 1er&nbsp;novembre, je commence un post-doc à l'<a href="https://disi.unibo.it/" target="_blank">Università di Bologna</a>, avec <a href="https://udallago.github.io/" target="_blank">Ugo Dal Lago</a>. Ciao <a href="https://www.youtube.com/shorts/fhWlpvYBpzI" target="_blank">Paris</a>&nbsp;!
+    </dd>
+    <dd lang="en">
+        On Nov.&nbsp;1st, I start a post-doc at <a href="https://disi.unibo.it/" target="_blank">Università di Bologna</a>, in <a href="https://udallago.github.io/" target="_blank">Ugo Dal Lago</a>'s group. Ciao <a href="https://www.youtube.com/shorts/fhWlpvYBpzI" target="_blank">Paris</a>!
+    </dd>
+
     <dt lang="fr">Juil. 2025</dt>
     <dt lang="en">July 2025</dt>
     <dd lang="fr">
