@@ -76,6 +76,15 @@
         'LOCATION'      => "aula Busi",
         'ABSTRACT'      => NULL
     ),
+    array(
+        'DATETIME'      => "2025-11-19 14:00",
+        'SPEAKER'       => 
+            "<a href='https://jad-issa.com/pages/jad-issa.html' target='_blank'>Jad Issa</a>",
+        'AFFILIATION'   => "CEA Paris-Saclay, Université de Lorraine",
+        'TITLE'         => "Static analysis of quantum/classical programs using hybrid path-sums",
+        'LOCATION'      => "aula Busi",
+        'ABSTRACT'      => NULL
+    ),
 ); 
 
 // The HTML format for printing a talk
