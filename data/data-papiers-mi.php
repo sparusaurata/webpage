@@ -109,7 +109,7 @@ $data = [
             "Compression for Coinductive Infinitary Rewriting: A Generic Approach, with Applications to Cut-Elimination for Non-Wellfounded Proofs",
         'authors'       => ["R.C.", "Alexis Saurin"],
         'type'          => "proceedings",
-        'status'        => "submitted",
+        'status'        => "review",
         'date'          => "2025-10-09",
         // Optional parameters (can be removed)
         'abstract'      =>

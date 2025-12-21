@@ -22,8 +22,8 @@ global $settings;
  * web server. If the URL to your website is https://www.site.ext/path/to/site,
  * this should be set to "/path/to/site/". 
  */
-//$settings['site root'] = "/perso/remy.cerda/";
-$settings['site root'] = "/webpage-template/";
+$settings['site root'] = "/perso/remy.cerda/";
+//$settings['site root'] = "/webpage-template/";
 
 
 /**
@@ -33,8 +33,8 @@ $settings['site root'] = "/webpage-template/";
  * This is the first thing you should check if the site is just a blank page.
  * Activate debugging in includes/template.php and read the error messages.
  */
-//$settings['server root'] = "/Data/home/remy.cerda/public_html/";
-$settings['server root'] = $_SERVER['DOCUMENT_ROOT'] . $settings['site root'];
+$settings['server root'] = "/Data/home/remy.cerda/public_html/";
+//$settings['server root'] = $_SERVER['DOCUMENT_ROOT'] . $settings['site root'];
 
 
 
