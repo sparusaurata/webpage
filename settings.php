@@ -96,7 +96,7 @@ $settings['layout']  = "includes/layout.css";
  *    language,
  *  - any other value is interpreted as negative.
  */
-$settings['multilingual'] = "dynamic";
+$settings['multilingual'] = NULL;
 
 
 /**
@@ -107,7 +107,7 @@ $settings['multilingual'] = "dynamic";
  * If $settings['multilingual'] is not set to 'static' or 'dynamic', only the
  * first language will be considered.
  */
-$settings['languages'] = ['fr', 'en'];
+$settings['languages'] = ['en'];
 
 
 ////////// ADDITIONAL COMPONENTS //////////////////////////////////////////////

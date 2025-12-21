@@ -1,8 +1,44 @@
 @import url("default-layout.css");
 
 :root {
-    --rgb-main: 255,255,255;
-    --col-link: #ff135a;
+    --col-bg: white;
+    --col-fg: black;
+    --rgb-main: 0, 0, 0;
+    --col-link: #1371ff;
+}
+
+html {
+    font-size: 16px;
+}
+
+header {
+    text-align: initial;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+header div.title {
+    font-size: calc(1.2rem + .5vw);
+}
+nav#nav-main {
+    border-style: none;
+    background-color: initial;
+    justify-content: initial;
+}
+nav#nav-main span {
+    padding-left: 0px;
+    padding-right: calc(1em + 1%);
+}
+#content::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin-bottom: 40px;
+    background-color: var(--col-fg);
+}
+
+h1, h2 {
+    color: var(--col-fg);
 }
 
 img.me {
