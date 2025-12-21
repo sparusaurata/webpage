@@ -15,6 +15,8 @@ start_content(
 
 ?>
 
+<h1>Teaching</h1>
+
 <p lang="fr">
     J'ai enseigné comme doctorant chargé d'enseignement (2020-2023, 64&nbsp;HETD/an) puis comme <abbr title="Attaché temporaire d'enseignement et de recherche">ATER</abbr> (2023-2024, 192&nbsp;HETD/an) au sein de la <a href="https://sciences.univ-amu.fr/" target="_blank">Faculté des sciences</a> de l'université d'Aix-Marseille.
 </p>
@@ -39,7 +41,7 @@ start_content(
 </dl>
 
 <p>
-    Voir le détail des heures pour
+    See detailed teaching duties for
     <a href="https://sciences.gdep.univ-amu.fr/service/2023/D01/U2397/" target="_blank">23-24</a>,
     <a href="https://sciences.gdep.univ-amu.fr/service/2022/D01/U2397/" target="_blank">22-23</a>,
     <a href="https://sciences.gdep.univ-amu.fr/service/2021/D01/U2397/" target="_blank">21-22</a>,
