@@ -16,17 +16,17 @@ start_content(
 // Let's first generate my lists
 $papiers_mi = publications(
     id: "papiers-mi",
-    datafile: "bib/data-papiers-mi.php",
+    datafile: "data/data-papiers-mi.php",
     class: ["spaceabove"],
 );
 $papiers_shs = publications(
     id: "papiers-shs",
-    datafile: "bib/data-papiers-shs.php",
+    datafile: "data/data-papiers-shs.php",
     class: ["spaceabove"],
 );
 $exposes = talks(
     id: "exposes",
-    datafile: "bib/data-exposes.php",
+    datafile: "data/data-exposes.php",
     groupby: "date",
     foldable: true,
 );
