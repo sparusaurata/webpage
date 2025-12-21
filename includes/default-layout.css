@@ -18,7 +18,7 @@
     --col-link: #4af;
     /* The red, green, blue values of the colour of the main elements of a
     page: the title, the subtitle, the menu, the headers */
-    --rgb-main: 255,100,150;
+    --rgb-main: 50,150,200;
     /* The main font */
     --font: "DejaVu Serif", serif;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 #middle {
-    flex-basis: 800px;
+    flex-basis: 1000px;
     flex-grow: 0;
     padding-bottom: 30px;
 }
