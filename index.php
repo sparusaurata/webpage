@@ -54,7 +54,7 @@ start_content(menufile: "menu.php");
 
 <?php echo publications(
     id: "papers",
-    datafile: "./bib/data-papers-example.php",
+    datafile: "./data/data-papers-example.php",
     groupby: "type",
 ); ?>
 
@@ -66,7 +66,7 @@ start_content(menufile: "menu.php");
 
 <?php echo talks(
     id: "talks",
-    datafile: "./bib/data-talks-example.php",
+    datafile: "./data/data-talks-example.php",
 ); ?>
 
 <?php end_content(); ?>
