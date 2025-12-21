@@ -18,7 +18,7 @@
     --col-link: #4af;
     /* The red, green, blue values of the colour of the main elements of a
     page: the title, the subtitle, the menu, the headers */
-    --rgb-main: 50,150,200;
+    --rgb-main: 255, 255, 255;
     /* The main font */
     --font: "DejaVu Serif", serif;
 }
