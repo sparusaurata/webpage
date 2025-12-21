@@ -209,7 +209,7 @@ $settings['paper types'] = array(
             'fr' => "Article dans les actes d'une conférence",
         ),
         'group'    => array(
-            'en' => "Conference proceedings",
+            'en' => "Articles in peer-reviewed proceedings",
             'fr' => "Actes de conférences",
         ),
         'numprefix' => "P",
@@ -221,8 +221,8 @@ $settings['paper types'] = array(
             'fr' => "Non publié",
         ),
         'group'    => array(
-            'en' => "Unpublished work",
-            'fr' => "Travaux non publiés",
+            'en' => "Other unpublished work",
+            'fr' => "Autres travaux non publiés",
         ),
         'numprefix' => "U",
     ),

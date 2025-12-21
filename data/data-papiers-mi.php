@@ -76,7 +76,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "J2",
+        'bibid'         => "conservativity-final",
         'title'         => "How to play the Accordion.
             Uniformity and the (non-)conservativity of the
             linear approximation of the λ-calculus",
@@ -94,7 +94,7 @@ $data = [
             In this article, we address the converse property, conservativity: do all reductions between Taylor expansions arise from actual β-reductions? We show that if we restrict the setting to finite terms and β-reduction sequences, then the linear approximation is conservative. However, as soon as one allows infinitary reduction sequences this property is broken. We design a counter-example, the Accordion. Then we show how restricting the reduction of the Taylor approximants allows to build a conservative extension of the β-reduction preserving good simulation properties; this restriction relies on uniformity, a property that was already at the core of Ehrhard and Regnier's pioneering work. Finally, we extend our work to β\(\bot\)-reductions, which play a key role in λ-calculus as they relate a λ-term to its Böhm tree.
             </p>",
         'pdf'           => "./fichiers/papiers/conservativity-lmcs.pdf",
-        'arxiv'         => null,
+        'arxiv'         => "2305.02785",
         'hal'           => null,
         'code'          => null,
         'video'         => null,
@@ -104,7 +104,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "P4",
+        'bibid'         => "compression",
         'title'         =>
             "Compression for Coinductive Infinitary Rewriting: A Generic Approach, with Applications to Cut-Elimination for Non-Wellfounded Proofs",
         'authors'       => ["R.C.", "Alexis Saurin"],
@@ -131,7 +131,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "U2",
+        'bibid'         => "lazy-abstract",
         'title'         => 
             "The lazy evaluation of the λ-calculus enjoys linear approximation, and that’s all",
         'authors'       => ["R.C."],
@@ -160,7 +160,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "U1",
+        'bibid'         => "compression-abstract",
         'title'         => 
             "Compression for Coinductive Infinitary Rewriting (A Preliminary Account)",
         'authors'       => ["R.C.", "Alexis Saurin"],
@@ -189,7 +189,7 @@ $data = [
 
     array(
         // Mandatory parameters
-        'bibid'         => "P3",
+        'bibid'         => "ohana",
         'title'         => 
             "Ohana trees and Taylor expansion for the λI-calculus.
             No variable gets left behind or forgotten!",
@@ -216,7 +216,7 @@ $data = [
     ),
 
     array(
-        'bibid'         => "T1",
+        'bibid'         => "phd",
         'title'         => "Taylor Approximation and Infinitary λ-Calculi",
         'authors'       => ["R.C."],
         'type'          => "thesis",
@@ -248,7 +248,7 @@ $data = [
     ),
 
     array(
-        'bibid'         => "P1",
+        'bibid'         => "nominal-mu-nu",
         'title'         => "Nominal Algebraic-Coalgebraic Data Types, with 
             Applications to Infinitary λ-Calculi. A fanfiction on
             <a href=\"https://lmcs.episciences.org/865\"
@@ -257,14 +257,12 @@ $data = [
         'type'          => "proceedings",
         'date'          => "2025-11-04",
         'info'          => array(
-            'en' => "Proceedings of
-                <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS&nbsp;2024</a>,
+            'en' =>
+                "Proceedings of the Twelfth Workshop on Fixed Points in Computer Science (FICS&nbsp;2024),
                 <a href=\"https://eptcs.org/content.cgi?FICS2024\" target=\"_blank\">EPTCS&nbsp;435</a>.
                 See Chapter&nbsp;1 of my thesis for a longer version.",
-            'fr' => "Actes de
-                <a href=\"https://www.irif.fr/users/saurin/fics2024/index.html\"
-                target=\"_blank\">FICS&nbsp;2024</a>,
+            'fr' =>
+                "Actes du Twelfth Workshop on Fixed Points in Computer Science (FICS&nbsp;2024),
                 <a href=\"https://eptcs.org/content.cgi?FICS2024\" target=\"_blank\">EPTCS&nbsp;435</a>.
                 Version plus détaillée dans le chapitre&nbsp;1 de ma thèse.",
         ),
@@ -288,7 +286,7 @@ $data = [
     ),
 
     array(
-        'bibid'         => "P2",
+        'bibid'         => "conservativity",
         'title'         => "How to play the Accordion.
             Uniformity and the (non-)conservativity of the
             linear approximation of the λ-calculus",
@@ -307,10 +305,11 @@ $data = [
             </p>",
         'pdf'           => "./fichiers/papiers/conservativity.pdf",
         'doi'           => "10.4230/LIPIcs.STACS.2025.23",
+        'arxiv'         => "2305.02785v4",
     ),
     
     array(
-        'bibid'         => "J1",
+        'bibid'         => "simulation",
         'title'         => "Finitary Simulation of Infinitary β-Reduction
             via Taylor Expansion, and Applications",
         'authors'       => ["R.C.", "L.&nbsp;Vaux&nbsp;Auclair"],
